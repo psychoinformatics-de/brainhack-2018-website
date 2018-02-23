@@ -12,7 +12,7 @@ This page loosely follows `Debian's copyright file syntax`_.
 Files:
   \*
 Copyright:
-  2017–2018, Alex Waite and Michael Hanke
+  2017–2018, Alex Waite, Michael Hanke and Benjamin Poldrack
 License:
   `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
 
