@@ -156,15 +156,45 @@ section.card .wrapper::after {
     text-decoration:none;
 }
 
-
-
-
-@media (max-width: 768px){
-    #hero{
-        margin:15px auto
-    }
+#landing .blurb {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-#hero header{
+@media (min-width: 640px) {
+  #landing .blurb { text-align: right; }
+}
+@media (min-width: 1024px) {
+  #landing .blurb {
+    width: 45%;
+    align-items: flex-end;
+  }
+}
+
+#landing .blurb p {
+  margin-bottom: 1em;
+  max-width: 450px;
+}
+@media (min-width: 1181px) {
+  #landing .blurb p { margin-bottom: 1.5em; }
+}
+
+#landing .photographer {
+  align-self: flex-end;
+  display: none;
+  line-height: 0;
+  width: 55%;
+}
+#landing .photographer img {
+  width: 100%;
+  opacity: .95;
+}
+@media (min-width: 1024px) {
+  #landing .photographer { display: unset; }
+}
+
+#landing header { /* TODO: cleanup with nav */
     position:absolute;
     left:50%;
     transform:translateX(-50%);
@@ -173,52 +203,10 @@ section.card .wrapper::after {
     height:80px;
     align-items:center;
     justify-content:flex-end;
-    z-index:10
 }
-#hero .wrapper .welcome{
-    width:45%
-}
-#hero .wrapper .welcome p{
-    max-width:450px;
-    margin-bottom:30px
-}
-@media (max-width: 1180px){
-    #hero .wrapper .welcome p{
-        margin-bottom:0
-    }
-}
-#hero .wrapper .photographer{
-    width:55%;
-    align-self:flex-end;
-    line-height:0
-}
-#hero .wrapper .photographer img{
-    width:100%;
-    opacity:.95
-}
-@media (max-width: 1023px){
-    #hero .wrapper .welcome{
-        display:flex;
-        width:100%;
-        flex-direction:column;
-        align-items:flex-end;
-        text-align:right
-    }
-    #hero .wrapper .photographer{
-        display:none
-    }
-}
-@media (max-width: 640px){
-    #hero .wrapper .welcome{
-        align-items:center;
-        text-align:center
-    }
-}
-@media (max-width: 768px){
-    #about{
-        margin:15px auto
-    }
-}
+
+
+
 #about .wrapper .camera{
     width:45%
 }
