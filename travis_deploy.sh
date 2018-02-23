@@ -11,12 +11,6 @@ git config user.email $GIT_EMAIL
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:x-oauth-basic@github.com" > .git/credentials
 
-
-echo WTF
-echo "$GIT_NAME"
-echo "$GIT_EMAIL"
-
-
 # switch to branch gh-pages and get the fresh build
 git remote set-branches --add origin gh-pages
 git fetch origin
