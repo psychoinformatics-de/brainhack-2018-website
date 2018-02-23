@@ -60,6 +60,24 @@ svg path {
 /*
  *  Layout
  */
+main > section {
+  position:relative;
+  width:1440px;
+  max-width:95%;
+  height:600px;
+  margin:30px auto;
+  background-color:#efefef;
+  overflow:hidden
+}
+section .wrapper{
+  position:relative;
+  display:flex;
+  width:1180px;
+  max-width:95%;
+  height:100%;
+  margin:0 auto;
+  align-items:center
+}
 
 /*
  *  Modules
@@ -81,28 +99,13 @@ svg path {
     text-transform:uppercase;
     text-decoration:none;
 }
-#hero svg{
-    left:10px
-}
-#about svg{
-    left:90px
-}
-#contact svg{
-    left:0
-}
+#hero svg { left: 10px; }
+#about svg { left: 90px; }
+#contact svg { left: 0; }
 @media (max-width: 640px){
     #hero svg,#about svg,#contact svg{
         left:0
     }
-}
-#hero{
-    position:relative;
-    width:1440px;
-    max-width:95%;
-    height:600px;
-    margin:30px auto;
-    background-color:#efefef;
-    overflow:hidden
 }
 @media (max-width: 768px){
     #hero{
@@ -119,15 +122,6 @@ svg path {
     align-items:center;
     justify-content:flex-end;
     z-index:10
-}
-#hero .wrapper{
-    position:relative;
-    display:flex;
-    width:1180px;
-    max-width:95%;
-    height:100%;
-    margin:0 auto;
-    align-items:center
 }
 #hero .wrapper .welcome{
     width:45%
@@ -191,28 +185,10 @@ svg path {
         text-align:center
     }
 }
-#about{
-    position:relative;
-    width:1440px;
-    max-width:95%;
-    height:600px;
-    margin:30px auto;
-    background-color:#efefef;
-    overflow:hidden
-}
 @media (max-width: 768px){
     #about{
         margin:15px auto
     }
-}
-#about .wrapper{
-    position:relative;
-    display:flex;
-    width:1180px;
-    max-width:95%;
-    height:100%;
-    margin:0 auto;
-    align-items:center
 }
 #about .wrapper .camera{
     width:45%
@@ -271,28 +247,12 @@ svg path {
         text-align:center
     }
 }
-#contact{
-    position:relative;
-    width:1440px;
-    max-width:95%;
-    height:600px;
-    margin:30px auto;
-    background-color:#efefef;
-    overflow:hidden
-}
 @media (max-width: 768px){
     #contact{
         margin:15px auto
     }
 }
 #contact .wrapper{
-    position:relative;
-    display:flex;
-    width:1180px;
-    max-width:95%;
-    height:100%;
-    margin:0 auto;
-    align-items:center;
     flex-direction:column;
     justify-content:center
 }
@@ -374,15 +334,6 @@ svg path {
     #contact .wrapper form textarea{
         margin:0 0 10px 0
     }
-}
-#contact .copyright{
-    position:absolute;
-    bottom:10px;
-    left:50%;
-    transform:translate(-50%);
-    margin-bottom:0;
-    font-family:"Raleway",Helvetica,sans-serif;
-    font-size:12px
 }
 
 /*
