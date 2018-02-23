@@ -85,28 +85,35 @@ svg path {
 /*
  *  Layout
  */
-main > section {
-  position:relative;
-  width:1440px;
-  max-width:95%;
-  height:600px;
-  margin:30px auto;
-  background-color:#efefef;
-  overflow:hidden
+.card {
+  margin: 30px auto;
+  max-width: 95%;
+  width: 1440px;
 }
-section .wrapper{
-  position:relative;
-  display:flex;
-  width:1180px;
-  max-width:95%;
-  height:100%;
-  margin:0 auto;
-  align-items:center
+section.card {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+section.card .wrapper {
+  position: relative;
+  display: flex;
+  width: 1180px;
+  max-width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center
 }
 
 /*
  *  Modules
  */
+.card {
+  background-color: #efefef;
+}
+
+#hero { background-color: #ff9e0d; }
+
 .nav{
     margin:0;
     padding:0;
@@ -151,13 +158,6 @@ section .wrapper{
 #hero .wrapper .welcome{
     width:45%
 }
-#hero .wrapper .welcome:after{
-    content:"";
-    display:block;
-    width:1px;
-    height:70px;
-    background-color:#111
-}
 #hero .wrapper .welcome h1{
     margin-top:0;
     margin-bottom:30px;
@@ -176,9 +176,6 @@ section .wrapper{
     margin-bottom:30px
 }
 @media (max-width: 1180px){
-    #hero .wrapper .welcome:after{
-        display:none
-    }
     #hero .wrapper .welcome p{
         margin-bottom:0
     }
