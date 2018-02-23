@@ -251,37 +251,20 @@ section.card .wrapper::after {
         text-align:center
     }
 }
-@media (max-width: 768px){
-    #contact{
-        margin:15px auto
-    }
-}
-#contact .wrapper{
+
+#signup .wrapper{
     flex-direction:column;
     justify-content:center
 }
-#contact .wrapper .blurb{
+#signup .wrapper .blurb{
     max-width:950px;
     margin-top:-45px;
     text-align:center
 }
-#contact .wrapper .blurb h2{
-    margin-top:0;
-    margin-bottom:30px;
-    font-size:42px;
-    font-family:"Raleway",Helvetica,sans-serif;
-    font-weight:100
-}
-@media (max-width: 640px){
-    #contact .wrapper .blurb h2{
-        margin-bottom:20px;
-        font-size:30px
-    }
-}
-#contact .wrapper .blurb p{
+#signup .wrapper .blurb p{
     margin-bottom:45px
 }
-#contact .wrapper form{
+#signup .wrapper form{
     position:relative;
     display:flex;
     max-width:600px;
@@ -290,7 +273,7 @@ section.card .wrapper::after {
     color:#111;
     font-family:"Raleway",Helvetica,sans-serif
 }
-#contact .wrapper form input[type="email"],#contact .wrapper form input[type="text"]{
+#signup .wrapper form input[type="email"],#signup .wrapper form input[type="text"]{
     width:42%;
     height:40px;
     padding:0 15px;
@@ -298,13 +281,13 @@ section.card .wrapper::after {
     border-radius:0;
     background:transparent
 }
-#contact .wrapper form input[type="email"]::placeholder,#contact .wrapper form input[type="text"]::placeholder{
+#signup .wrapper form input[type="email"]::placeholder,#signup .wrapper form input[type="text"]::placeholder{
     color:#111
 }
-#contact .wrapper form input[type="email"]:focus,#contact .wrapper form input[type="text"]:focus{
+#signup .wrapper form input[type="email"]:focus,#signup .wrapper form input[type="text"]:focus{
     outline:none
 }
-#contact .wrapper form textarea{
+#signup .wrapper form textarea{
     width:100%;
     height:90px;
     margin:30px 0;
@@ -314,13 +297,13 @@ section.card .wrapper::after {
     background:transparent;
     resize:none
 }
-#contact .wrapper form textarea::placeholder{
+#signup .wrapper form textarea::placeholder{
     color:#111
 }
-#contact .wrapper form textarea:focus{
+#signup .wrapper form textarea:focus{
     outline:none
 }
-#contact .wrapper form input[type="submit"]{
+#signup .wrapper form input[type="submit"]{
     width:100%;
     height:40px;
     color:#fff;
@@ -331,11 +314,11 @@ section.card .wrapper::after {
     background-color:#111
 }
 @media (max-width: 640px){
-    #contact .wrapper form input[type="email"],#contact .wrapper form input[type="text"]{
+    #signup .wrapper form input[type="email"],#signup .wrapper form input[type="text"]{
         width:100%;
         margin-bottom:10px
     }
-    #contact .wrapper form textarea{
+    #signup .wrapper form textarea{
         margin:0 0 10px 0
     }
 }
