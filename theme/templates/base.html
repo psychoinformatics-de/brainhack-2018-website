@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="{{ AUTHOR }}" />
+  <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+
+  <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+  {% block extra_headers %}{% endblock %}
+</head>
+<body>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
