@@ -1,6 +1,6 @@
 # Brainhack Magdeburg 2018 #
 
-[![Travis tests status](https://secure.travis-ci.org/psychoinformatics-de/brainhack-2018.png?branch=master)](https://travis-ci.org/psychoinformatics-de/brainhack-2018)
+[![Travis tests status](https://secure.travis-ci.org/psychoinformatics-de/brainhack-2018-website.png?branch=master)](https://travis-ci.org/psychoinformatics-de/brainhack-2018-website)
 
 
 This repo has all of the sources and assets for the website of Brainhack Magdeburg.
