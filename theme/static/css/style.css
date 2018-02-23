@@ -74,13 +74,6 @@ small {
 p {
   margin: 0 0 20px 0;
 }
-svg {
-  position:absolute;
-  height:100%;
-}
-svg path {
-  fill:#e3e3e3;
-}
 
 /*
  *  Layout
@@ -93,7 +86,12 @@ svg path {
 section.card {
   height: 600px;
   overflow: hidden;
-  position: relative;
+  opacity: 0.99;
+  position: relative; /* can remove when nav is fixed */
+}
+footer.card {
+  margin: -15px auto 15px auto;
+  text-align: center;
 }
 section.card .wrapper {
   position: relative;
@@ -112,7 +110,23 @@ section.card .wrapper {
   background-color: #efefef;
 }
 
+section.card {
+  opacity: 0.99;
+}
+section.card .wrapper::after {
+  font-family: monospace;
+  font-weight: bold;
+  opacity: 0.75;
+  position: absolute;
+  z-index: -1;
+  font-size: 826px;
+  height: 215%;
+  left: -10%;
+}
 #hero { background-color: #ff9e0d; }
+#hero .wrapper:after    { content: "B"; color: #f29100; }
+#about .wrapper:after   { content: "R"; color: #e2e2e2; }
+#contact .wrapper:after { content: "A"; color: #e2e2e2; }
 
 .nav{
     margin:0;
@@ -131,14 +145,10 @@ section.card .wrapper {
     text-transform:uppercase;
     text-decoration:none;
 }
-#hero svg { left: 10px; }
-#about svg { left: 90px; }
-#contact svg { left: 0; }
-@media (max-width: 640px){
-    #hero svg,#about svg,#contact svg{
-        left:0
-    }
-}
+
+
+
+
 @media (max-width: 768px){
     #hero{
         margin:15px auto
