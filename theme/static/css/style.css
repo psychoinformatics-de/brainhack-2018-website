@@ -28,14 +28,12 @@
        url('/theme/fonts/open-sans-v15-latin-regular.woff') format('woff');
 }
 
-
 body {
   background-color: #fff;
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #111;
   margin: 0;
 }
 @media (min-width: 415px) {
@@ -47,16 +45,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', serif;
   font-weight: 100;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 h1 {
   font-size: 30px;
   line-height: 1.05;
-  margin-bottom: 20px;
 }
 h2 {
   font-size: 30px;
   line-height: 1.14;
-  margin-bottom: 20px;
 }
 h3 {
   font-size: 26px;
@@ -96,12 +93,12 @@ footer.card {
   text-align: center;
 }
 section.card .wrapper {
-  position: relative;
+  align-items: center;
   display: flex;
   height: 100%;
-  align-items: center
   max-width: 1180px; /* TODO */
   margin: 0 1.5em;
+  position: relative;
 }
 
 /*
@@ -124,33 +121,15 @@ section.card .wrapper::after {
   left: -10%;
 }
 #landing { background-color: #ff9e0d; }
-#landing .wrapper:after { content: "B"; color: #f59403; }
-#about .wrapper:after   { content: "R"; color: #e5e5e5; }
-#signup .wrapper:after  { content: "A"; color: #e5e5e5; }
+#landing .wrapper::after { content: "B"; color: #f59403; }
+#about .wrapper::after   { content: "R"; color: #e5e5e5; }
 
-.nav{
-    margin:0;
-    padding:0;
-    list-style:none;
-}
 .card .img-wrap {
   display: none;
   line-height: 0;
 }
-.nav li{
-    display: inline-block;
-    text-align: right;
-}
 .card .img-wrap img {
   opacity: .95;
-}
-.nav li a{
-    padding:5px 0;
-    color:#111;
-    font-size:12px;
-    font-family:"Raleway",Helvetica,sans-serif;
-    text-transform:uppercase;
-    text-decoration:none;
 }
 @media (min-width: 1024px) {
   .card .img-wrap { display: unset; }
@@ -207,10 +186,11 @@ section.card .wrapper::after {
 #about .img-wrap img {
   width: 85%;
 }
-#about .wrapper .blurb{
+
+#about .blurb{
     width:55%
 }
-#about .wrapper .blurb h2:before{
+#about .blurb h2::before{
     content:"";
     position:relative;
     bottom:15px;
@@ -220,34 +200,45 @@ section.card .wrapper::after {
     margin-right:30px;
     background-color:#111
 }
-#about .wrapper .blurb p{
-    max-width:600px;
-    margin-bottom:45px
+#about .blurb p {
+    max-width: 600px;
+    margin-bottom: 45px;
 }
-@media (max-width: 1023px){
-    #about .wrapper .camera{
-        display:none
-    }
-    #about .wrapper .blurb{
+@media (max-width: 1023px) {
+    #about .blurb {
         display:flex;
         width:100%;
         flex-direction:column;
         align-items:flex-end;
         text-align:right
     }
-    #about .wrapper .blurb h2:before{
+    #about .blurb h2::before {
         display:none
     }
 }
-@media (max-width: 640px){
-    #about .wrapper .blurb{
+@media (max-width: 640px) {
+    #about .blurb {
         align-items:center;
         text-align:center
     }
 }
 
+.nav{
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+.nav li{
+  display: inline-block;
+  text-align: right;
 }
+.nav li a{
+  padding: 0.2em 0.5em;
+  color: #111;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /*
