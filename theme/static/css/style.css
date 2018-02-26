@@ -19,35 +19,26 @@
        url('/theme/fonts/raleway-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/theme/fonts/raleway-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-@font-face { /* License: OFL 1.1 */
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Quicksand Regular'), local('Quicksand-Regular'),
-       url('/theme/fonts/quicksand-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
-       url('/theme/fonts/quicksand-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 @font-face { /* License: Apache 2.0 */
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'),
-       url('/theme/fonts/open-sans-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/theme/fonts/open-sans-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/theme/fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+       url('/theme/fonts/open-sans-v15-latin-regular.woff') format('woff');
 }
 
 
 body {
   background-color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: #111;
 }
-@media (max-width: 415px){
-    body{
-        font-size:14px
-    }
+@media (min-width: 415px) {
+  body { font-size:16px; }
 }
 
 h1, h2, h3, h4, h5, h6 {
