@@ -36,6 +36,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #111;
+  margin: 0;
 }
 @media (min-width: 415px) {
   body { font-size:16px; }
@@ -79,12 +80,11 @@ p {
  *  Layout
  */
 .card {
-  margin: 15px auto;
-  max-width: 95%;
-  width: 1440px; /* TODO */
+  margin: 1em;
+  max-width: 1440px; /* TODO */
 }
 @media (min-width: 768px){
-  .card { margin: 30px auto; }
+  .card { margin: 1.7em; }
 }
 section.card {
   height: 600px;
@@ -92,17 +92,16 @@ section.card {
   position: relative; /* can remove when nav is fixed */
 }
 footer.card {
-  margin: -15px auto 15px auto;
+  margin-top: -0.85em;
   text-align: center;
 }
 section.card .wrapper {
   position: relative;
   display: flex;
-  width: 1180px;
-  max-width: 95%;
   height: 100%;
-  margin: 0 auto;
   align-items: center
+  max-width: 1180px; /* TODO */
+  margin: 0 1.5em;
 }
 
 /*
