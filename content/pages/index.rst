@@ -7,4 +7,6 @@ Welcome
 
 An obligatory `XKCD <https://xkcd.com>`_ comic:
 
+A not so obligatory test change
+
 .. image:: https://imgs.xkcd.com/comics/fmri.png
