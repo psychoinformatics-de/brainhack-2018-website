@@ -80,17 +80,10 @@ p {
   margin: 1em;
   max-width: 1440px; /* TODO */
 }
-@media (min-width: 768px){
-  .card { margin: 1.7em; }
-}
 section.card {
   height: 600px;
   overflow: hidden;
   position: relative;
-}
-footer.card {
-  margin-top: -0.85em;
-  text-align: center;
 }
 section.card .wrapper {
   align-items: center;
@@ -99,6 +92,13 @@ section.card .wrapper {
   max-width: 1180px; /* TODO */
   margin: 0 1.5em;
   position: relative;
+}
+footer.card {
+  margin-top: -0.5em;
+}
+@media (min-width: 768px){
+  .card { margin: 1.7em; }
+  footer.card { margin-top: -0.85em; }
 }
 
 /*
@@ -207,6 +207,11 @@ nav li a {
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* Footer */
+footer.card {
+  text-align: center;
 }
 
 /*
