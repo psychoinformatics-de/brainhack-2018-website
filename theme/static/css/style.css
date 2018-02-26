@@ -134,9 +134,16 @@ section.card .wrapper::after {
     padding:0;
     list-style:none;
 }
+.card .img-wrap {
+  display: none;
+  line-height: 0;
+}
 .nav li{
     display: inline-block;
     text-align: right;
+}
+.card .img-wrap img {
+  opacity: .95;
 }
 .nav li a{
     padding:5px 0;
@@ -145,6 +152,9 @@ section.card .wrapper::after {
     font-family:"Raleway",Helvetica,sans-serif;
     text-transform:uppercase;
     text-decoration:none;
+}
+@media (min-width: 1024px) {
+  .card .img-wrap { display: unset; }
 }
 
 #landing .blurb {
@@ -171,18 +181,12 @@ section.card .wrapper::after {
   #landing .blurb p { margin-bottom: 1.5em; }
 }
 
-#landing .photographer {
+#landing .img-wrap {
   align-self: flex-end;
-  display: none;
-  line-height: 0;
   width: 55%;
 }
-#landing .photographer img {
+#landing .img-wrap img {
   width: 100%;
-  opacity: .95;
-}
-@media (min-width: 1024px) {
-  #landing .photographer { display: unset; }
 }
 
 #landing header { /* TODO: cleanup with nav */
@@ -196,13 +200,11 @@ section.card .wrapper::after {
     justify-content:flex-end;
 }
 
-
-
-#about .wrapper .camera{
-    width:45%
+#about .img-wrap {
+  width: 45%;
 }
-#about .wrapper .camera img{
-    width:85%
+#about .img-wrap img {
+  width: 85%;
 }
 #about .wrapper .blurb{
     width:55%
