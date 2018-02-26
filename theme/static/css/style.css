@@ -86,7 +86,7 @@ p {
 section.card {
   height: 600px;
   overflow: hidden;
-  position: relative; /* can remove when nav is fixed */
+  position: relative;
 }
 footer.card {
   margin-top: -0.85em;
@@ -186,19 +186,22 @@ section.card .wrapper::after {
   #about .blurb h2::before { display: inline-block; }
 }
 
+/* Navigation */
+nav {
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
 }
-
-.nav{
-  font-weight: 400;
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.nav li{
+nav li {
   display: inline-block;
   text-align: right;
 }
-.nav li a{
+nav li a {
   padding: 0.2em 0.5em;
   color: #111;
   font-size: 12px;
