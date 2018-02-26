@@ -109,7 +109,7 @@ section.card .wrapper {
 }
 
 section.card {
-  opacity: 0.99;
+  z-index: 0;
 }
 section.card .wrapper::after {
   font-family: monospace;
@@ -118,7 +118,7 @@ section.card .wrapper::after {
   z-index: -1;
   font-size: 826px;
   height: 215%;
-  left: -10%;
+  left: -0.03em;
 }
 #landing { background-color: #ff9e0d; }
 #landing .wrapper::after { content: "B"; color: #f59403; }
