@@ -157,6 +157,7 @@ section.card .wrapper::after {
   .card .img-wrap { display: unset; }
 }
 
+#landing h1 { margin-bottom: 0; }
 #landing .blurb {
   align-items: center;
   display: flex;
@@ -164,13 +165,14 @@ section.card .wrapper::after {
   text-align: center;
 }
 @media (min-width: 640px) {
-  #landing .blurb { text-align: right; }
-}
-@media (min-width: 1024px) {
   #landing .blurb {
-    width: 45%;
+    text-align: right;
     align-items: flex-end;
   }
+  #landing .date { margin-right: 0.3em; }
+}
+@media (min-width: 1024px) {
+  #landing .blurb { width: 45%; }
 }
 
 #landing .blurb p {
