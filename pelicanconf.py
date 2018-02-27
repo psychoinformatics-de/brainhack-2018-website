@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 #
 # About the site
 #
-AUTHOR = u'Alex Waite'
+AUTHOR = u'BrainHack Magdeburg'
 SITENAME = u'BrainHack Magdeburg'
 SITEURL = ''
 
