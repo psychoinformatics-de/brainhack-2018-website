@@ -26,5 +26,10 @@ STATIC_PATHS = ['css']
 
 PATH_METADATA = 'pages/(?P<path>.*)\..*'
 
+MENUITEMS = (('home', 'index.html'),
+             ('projects', 'projects.html'),
+             ('schedule', 'schedule.html'),
+)
+
 FEED_ALL_ATOM = None
 AUTHOR_SAVE_AS = False

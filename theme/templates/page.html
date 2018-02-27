@@ -1,4 +1,15 @@
 {% extends "base.html" %}
 {% block title %} &ndash; {{ page.title }}{% endblock %}
 
-{% block content %}{{ page.content }}{% endblock %}
+{% block content %}
+  <nav class='card'>
+    <ul>
+    {% for title, link in MENUITEMS %}
+      <li><a href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
+    {% endfor %}
+    </ul>
+  </nav>
+
+  {{ page.content }}
+
+{% endblock %}

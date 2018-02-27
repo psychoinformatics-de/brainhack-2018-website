@@ -70,9 +70,11 @@ h3 {
  *  Layout
  */
 .card {
-  margin: 1em;
+  margin: 1em 1.5em;
   max-width: 1440px;
 }
+nav.card { margin: 0.8em 1.5em; }
+nav.card + section.card { margin-top: 0; }
 section.card {
   display: flex;
   height: 600px;
@@ -92,10 +94,12 @@ footer.card {
 }
 @media (min-width: 768px){
   .card { margin: 1.7em; }
+  nav.card { margin: 0.8em 1.7em; }
   footer.card { margin-top: -0.85em; }
 }
 @media (min-width: 1500px) {
   .card { margin: 1.7em auto; }
+  nav.card { margin: 0.8em auto; }
 }
 
 /*
@@ -210,11 +214,9 @@ section.card .wrapper::after {
 }
 
 /* Navigation */
-nav {
-  position: absolute;
-  right: 1.5em;
-  top: 1.5em;
-  z-index: 1;
+nav.card {
+  background: none;
+  text-align: right;
 }
 nav ul {
   list-style: none;
@@ -223,7 +225,6 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  text-align: right;
 }
 nav li a {
   border-bottom: 2px solid transparent;
@@ -236,7 +237,7 @@ nav li a {
   transition: border-color 0.4s;
 }
 @media screen and (min-width: 768px) {
-  nav li a:hover { border-bottom: 2px solid #222; }
+  nav li a:hover { border-bottom: 2px solid #333; }
 }
 
 /* Footer */
@@ -251,17 +252,17 @@ footer span.break { display: block; }
  *  State
  */
 nav li a.active {
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid #333;
 }
 @media screen and (min-width: 768px) {
   nav li a.active {
     animation: borderFadeIn 0.4s;
-    border-top: 2px solid #222;
+    border-top: 2px solid #333;
   }
 }
 @keyframes borderFadeIn {
-  from { border-top: 3px solid rgba(255,162,0,0.0); }
-  to   { border-top: 3px solid rgba(255,162,0,1.0); }
+  from { border-top: 2px solid rgba(51,51,51,0.0); }
+  to   { border-top: 2px solid rgba(51,51,51,1.0); }
 }
 
 /*
