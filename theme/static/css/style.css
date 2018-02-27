@@ -36,8 +36,8 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-@media (min-width: 415px) {
-  body { font-size:16px; }
+@media (min-width: 425px) {
+  body { font-size: 16px; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +59,7 @@ h3 {
   font-size: 30px;
   line-height: 1.38;
 }
-@media (min-width: 641px) { /* TODO: min-height, not width */
+@media (min-width: 640px) { /* TODO: min-height, not width */
   h1, h2 {
     font-size: 42px;
     margin-bottom: 30px;
@@ -78,27 +78,32 @@ p {
  */
 .card {
   margin: 1em;
-  max-width: 1440px; /* TODO */
+  max-width: 1440px;
 }
 section.card {
-  height: 600px;
-  overflow: hidden;
-  position: relative;
-}
-section.card .wrapper {
-  align-items: center;
   display: flex;
-  height: 100%;
-  max-width: 1180px; /* TODO */
-  margin: 0 1.5em;
+  height: 600px;
+  justify-content: space-around;
+  overflow: hidden;
   position: relative;
 }
 footer.card {
   margin-top: -0.5em;
 }
+.card .wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  max-width: 1180px;
+  margin: 0 1.5em;
+  position: relative; /* TODO: come to an opinion about how I want letters positioned */
+}
 @media (min-width: 768px){
   .card { margin: 1.7em; }
   footer.card { margin-top: -0.85em; }
+}
+@media (min-width: 1500px) {
+  .card { margin: 1.7em auto; }
 }
 
 /*
