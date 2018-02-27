@@ -96,7 +96,6 @@ footer.card {
   height: 100%;
   max-width: 1180px;
   margin: 0 1.5em;
-  position: relative; /* TODO: come to an opinion about how I want letters positioned */
 }
 @media (min-width: 768px){
   .card { margin: 1.7em; }
@@ -148,7 +147,7 @@ section.card .wrapper::after {
   z-index: -1;
   font-size: 826px;
   height: 215%;
-  left: -0.03em;
+  left: 0;
 }
 #landing { background-color: #ff9e0d; }
 #landing .wrapper::after { content: "B"; color: #f99508; }
