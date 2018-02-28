@@ -69,11 +69,19 @@ h3 {
 /*
  *  Layout
  */
-.card {
-  margin: 1em 1.5em;
+main {
+  margin: 0 auto;
   max-width: 1440px;
+  padding: 0 1.5em;
 }
-nav.card { margin: 0.8em 1.5em; }
+.card {
+  margin: 1em 0;
+  padding: 0 1.5em;
+}
+nav.card {
+  margin: 0.8em 0;
+  padding: 0;
+}
 nav.card + section.card { margin-top: 0; }
 section.card {
   display: flex;
@@ -82,24 +90,17 @@ section.card {
   overflow: hidden;
   position: relative;
 }
-footer.card {
-  margin-top: -0.5em;
-}
+footer.card { margin-top: -0.5em; }
 .card .wrapper {
   align-items: center;
   display: flex;
   height: 100%;
   max-width: 1180px;
-  margin: 0 1.5em;
 }
 @media (min-width: 768px){
-  .card { margin: 1.7em; }
-  nav.card { margin: 0.8em 1.7em; }
+  main { padding: 0 1.7em; }
+  .card { margin: 1.7em 0; }
   footer.card { margin-top: -0.85em; }
-}
-@media (min-width: 1500px) {
-  .card { margin: 1.7em auto; }
-  nav.card { margin: 0.8em auto; }
 }
 
 /*
