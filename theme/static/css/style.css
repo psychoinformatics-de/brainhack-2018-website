@@ -130,7 +130,7 @@ footer.card { margin-top: -0.5em; }
   width: 100%;
 }
 @media (min-width: 1024px) {
-  .card p { margin: 1.5em; }
+  .card p { margin: 1.5em 0.3em; }
   .card .img-wrap { display: unset; }
 }
 
@@ -158,7 +158,7 @@ section.card .wrapper::after {
     text-align: right;
     width: 75%;
   }
-  #landing .date { margin-right: 0.3em; }
+  #landing .date { margin-top: 0; }
 }
 @media (min-width: 1024px) {
   #landing .blurb {
