@@ -7,7 +7,7 @@
   <meta name="author" content="{{ AUTHOR }}" />
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 
-  <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   {% block extra_headers %}{% endblock %}
 </head>
 <body>
@@ -17,7 +17,7 @@
     <footer class='card'>
       <p>content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
         <span class='break'>—</span> &copy;2018 {{ AUTHOR }} <span class='break'>—</span>
-        unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+        unless <a rel="license" href='{{ SITEURL }}/copyright.html'>indicated otherwise</a>
       </p>
     </footer>
 
