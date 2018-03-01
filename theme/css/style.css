@@ -123,11 +123,11 @@ footer.card { margin-top: -0.5em; }
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2em auto;
+    margin: 0.85em auto;
   }
   .pitch {
-    flex-basis: calc(50% - 3.5em);
-    margin: 0.5em 0;
+    flex-basis: calc(50% - 3.1em);
+    margin: 0.85em 0;
   }
 }
 
@@ -282,13 +282,32 @@ footer span.break { display: block; }
 }
 
 /* Project Pitches */
-.project-header {
-  background-image: url('/theme/img/fish.png');
-  height: 250px;
-  text-align: center;
+#project-landing {
+  background-color: #ff9e0d;
+  height: 300px;
+  margin: 0;
+  text-align: right;
+  justify-content: flex-end;
 }
-.project-header h1 {
-  margin-bottom: 0.5em;
+#project-landing h1 {
+  margin: 0 0 0.5em 0;
+}
+#project-landing .wrapper::after   { content: "HAC K"; color: #f99508; }
+#project-landing .wrapper::after {
+  font-family: monospace;
+  font-size: 413px;
+  font-weight: bold;
+  left: 0;
+  letter-spacing: -70px;
+  position: absolute;
+  word-spacing: -158px;
+  z-index: -1;
+}
+@media (min-width: 640px) {
+  #project-landing .blurb {
+    text-align: right;
+    width: 65%;
+  }
 }
 
 .pitch {
@@ -318,10 +337,14 @@ footer span.break { display: block; }
     display: flex;
     text-align: left;
   }
-  .pitch header img {
-    margin-right: 1em;
-  }
+  .pitch header img { margin: 0 1em 0 0; }
 }
+.pitch:nth-of-type(even) { text-align: right; }
+.pitch:nth-of-type(even) header {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.pitch:nth-of-type(even) header img { margin: 0 0 0 1em; }
 
 /* TODO */
 @media screen and (max-width: 767px) {
