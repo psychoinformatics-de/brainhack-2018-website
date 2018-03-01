@@ -23,7 +23,7 @@ Files:
 Copyright:
   2016, Bucky Maler, 2018 Alex Waite
 License:
-  Public Domain (Bucky Maler), `MIT`_ (Alex Waite)
+  `MIT`_
 Notes:
   The original design of this theme is by `Jakub Kowalczyk`_. Jakub's design was
   implemented in Jade and Sass by `Bucky Maler`_.
