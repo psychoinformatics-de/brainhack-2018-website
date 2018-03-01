@@ -3,236 +3,346 @@
 /*
  *  Base
  */
-@font-face { /* License: Apache 2.0 */
-  font-family: 'Open Sans';
+@font-face { /* License: OFL 1.1 */
+  font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'),
-       url('/theme/fonts/open-sans-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
-       url('/theme/fonts/open-sans-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face { /* License: Apache 2.0 */
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'),
-       url('/theme/fonts/open-sans-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
-       url('/theme/fonts/open-sans-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'),
+       url('/theme/fonts/raleway-v12-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/theme/fonts/raleway-v12-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face { /* License: OFL 1.1 */
-  font-family: 'Inconsolata';
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'),
+       url('/theme/fonts/raleway-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/theme/fonts/raleway-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face { /* License: Apache 2.0 */
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Inconsolata Regular'), local('Inconsolata-Regular'),
-       url('/theme/fonts/inconsolata-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/theme/fonts/inconsolata-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/theme/fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+       url('/theme/fonts/open-sans-v15-latin-regular.woff') format('woff');
 }
 
 a {
-  color: #d9411e;
+  /* changing the border width causes a reflow, which looks choppy, causes other
+   * elements to shift, and is really expensive. text-decoration isn't
+   * transition-able. Though a bit hacky, box-shadow meets all the requirements
+   * and neatly sidesteps the reflow problem. */
+  box-shadow: 0 1px 0px 0 #111;
+  color: #111;
   text-decoration: none;
+  transition: box-shadow 0.4s, color 0.4s;
 }
 a:hover {
-  color: #ff5a09;
+  color: #333;
+  box-shadow: 0 2px 0px 0 #333;
 }
 
-body, html {
-  height: 100%;
-  width: 100%;
-}
 body {
+  background-color: #fff;
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
   margin: 0;
-  padding: 0;
-  background-color: #eee;
-  color: #242121;
-  font-family: 'OpenSans', sans-serif;
-  font-size: 1rem;
-  line-height: 2em;
 }
-
-blockquote {
-  background: #f9f9f9;
-  border: 1px solid #f0f0f0;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 0;
-  padding: 0.5em 0.95em;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-blockquote::before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 5em;
-  line-height: 0em;
-  margin-right: 0.5rem;;
-  vertical-align: -2.5rem;
+@media (min-width: 425px) {
+  body { font-size: 16px; }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  line-height: 1.2;
+  color: #222;
+  font-family: 'Raleway', serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0.5em 0;
 }
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.2em; }
-
-p { margin: 1em 0; }
-
-pre, tt, code {
-  background: #f7f7f7;
-  border: 1px solid #d0d0d0;
-  border-radius: 2px;
-  font-family: 'Inconsolata', monospace;
-  line-height: 1.4;
-  margin: 0;
+h1 {
+  font-size: 36px;
+  line-height: 1.05;
 }
-pre {
-  margin: 0.2em 0;
-  padding: 0.5em 1em;
+h2 {
+  font-size: 36px;
+  line-height: 1.14;
 }
-tt, code {
-  padding: 0.1em 0.3em;
+h3 {
+  font-size: 30px;
+  line-height: 1.38;
+}
+@media (min-width: 640px) { /* TODO: min-height, not width */
+  h1, h2 {
+    font-size: 42px;
+    margin: 0.8em 0;
+  }
 }
 
 /*
  *  Layout
  */
-article { margin: 0 4em; }
 main {
-  background: #fff;
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1.5em;
 }
-main #content { flex: 1; }
+.card {
+  margin: 1em 0;
+  padding: 0 1.5em;
+}
+nav.card {
+  margin: 0.8em 0;
+  padding: 0;
+}
+nav.card + section.card { margin-top: 0; }
+section.card {
+  display: flex;
+  height: 600px;
+  justify-content: space-around;
+  overflow: hidden;
+  position: relative;
+}
+footer.card { margin-top: -0.5em; }
+.card .wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  max-width: 1180px;
+}
+@media (min-width: 768px){
+  main { padding: 0 1.7em; }
+  .card { margin: 1.7em 0; }
+  footer.card { margin-top: -0.85em; }
+}
 
 @media screen and (min-width: 768px) {
-  aside {
-    width: 18em;
-    height: 100%;
-    position: fixed; top: 0; left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em auto;
   }
-  main {
-    border: 1px solid #dbdbdb;
-    border-width: 0 1px;
-    width: 62em;
-    position: absolute; top: 0; left: 18em;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  .pitch {
+    flex-basis: calc(50% - 3.5em);
+    margin: 0.5em 0;
   }
 }
 
 /*
  *  Modules
  */
-aside {
-  background-color: #fafafa;
-  margin: 0;
-}
-aside h1 {
-  background-color: #337ab7;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 0;
-  padding: 0.5em 0.2em;
+.card {
+  background-color: #efefef;
   text-align: center;
+  z-index: 0;
 }
-aside h1 a { color: #eee; }
-aside h1 a:hover {
-  background-color: inherit;
-  color: #eee;
-  text-decoration: underline;
+.card .blurb h2::before, .card .blurb h2::after {
+  background-color: #111;
+  bottom: 0.3em;
+  content: "";
+  display: none;
+  height: 1px;
+  position: relative;
+  margin: 0 0.5em;
+  width: 1.5em;
 }
-aside nav { font-size: 15px; }
-aside nav ul { padding: 0; }
-aside nav ul li { list-style: none; }
-aside nav ul a {
-  color: #444;
-  display: block;
-  padding: 0 0.5em 0 2em;
-  transition: all 0.2s linear;
-  transition-property: background, color;
+.card .img-wrap {
+  display: none;
+  line-height: 0;
 }
-aside nav ul a:hover {
-  color: #eee;
-  background: #428bca;
+.card .img-wrap img {
+  opacity: .95;
+  width: 100%;
 }
-aside nav ul ul a { padding-left: 3em; }
-aside nav ul ul ul a { padding-left: 4em; }
+@media (min-width: 768px){
+  .card p { margin: 1.5em 0.28em; }
+}
+@media (min-width: 1024px) {
+  .card .img-wrap { display: unset; }
+}
 
-.breadcrumbs {
+/* Navigation */
+nav.card {
+  background: none;
+  text-align: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
-.breadcrumbs li {
+nav li {
   display: inline-block;
-  list-style: none;
+}
+nav li a {
+  box-shadow: none;
+  color: #111;
+  font-size: 12px;
+  padding: 0.2em 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 0.4s;
+}
+@media screen and (min-width: 768px) {
+  nav li a:hover { box-shadow: 0px 2px 0 #333; }
 }
 
-footer {
-  border-top: #eee 1px solid;
-  line-height: 0.7em;
-  padding: 1em 0;
+/* Card letter backgrounds */
+section.card .wrapper::after {
+  font-family: monospace;
+  font-weight: bold;
+  position: absolute;
+  z-index: -1;
+  font-size: 826px;
+  height: 215%;
+  left: 0;
 }
-footer p {
-  color: #777;
-  font-size: 15px;
-  margin: 2px;
-  text-align: center;
+#landing { background-color: #ff9e0d; }
+#landing .wrapper::after   { content: "B"; color: #f99508; }
+#about .wrapper::after     { content: "R"; color: #e9e9e9; }
+#three { background-image: url('/theme/img/collab.jpg'); background-position: center; }
+#three .wrapper::after     { content: "A"; color: #bbbbbb; opacity: 0.2; }
+#equipment .wrapper::after { content: "I"; color: #e9e9e9; }
+#resources .wrapper::after { content: "N"; color: #e9e9e9; }
+
+/* Landing */
+@media (min-width: 640px) {
+  #landing .blurb {
+    text-align: right;
+    width: 75%;
+  }
+  #landing .date { margin-top: 0; }
 }
-footer span.break {
-  display: block;
+@media (min-width: 1024px) {
+  #landing .blurb {
+    width: 45%;
+  }
+  #landing .img-wrap {
+    align-self: flex-end;
+    width: 55%;
+  }
 }
-@media screen and (min-width: 1000px) {
+#landing h1 { margin-bottom: 0; }
+
+/* About */
+#about .wrapper { justify-content: flex-end; }
+@media (min-width: 640px) {
+  #about .blurb {
+    text-align: right;
+    width: 75%;
+  }
+  #about .blurb h2::before { display: inline-block; }
+}
+@media (min-width: 1024px) {
+  #about .blurb { width: 65%; }
+}
+
+/* Four */
+@media (min-width: 640px) {
+  #equipment .wrapper { justify-content: center; }
+  #equipment .blurb { width: 75%; }
+}
+@media (min-width: 1024px) {
+  #equipment .blurb { width: 65%; }
+}
+#equipment .blurb ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+/* Five */
+#resources .wrapper { justify-content: flex-end; }
+@media (min-width: 640px) {
+  #resources .blurb {
+    text-align: right;
+    width: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  #resources .blurb { width: 55%; }
+  #resources .img-wrap { width: 45%; }
+  #resources .img-wrap img { width: 85%; }
+}
+@media (min-width: 640px) {
+  #resources .blurb h2::before { display: inline-block; }
+}
+
+/* Footer */
+footer.card { text-align: center; }
+footer.card p {
+  font-size: 12px;
+  padding: 0.5em 1em;
+}
+footer span.break { display: block; }
+@media screen and (min-width: 850px) {
   footer span.break { display: inline; }
 }
 
-.headerlink {
-  font-size: 0.8em;
-  margin-left: 0.3em;
-  opacity: 0;
-  transition: opacity 0.1s;
+/* Project Pitches */
+.project-header {
+  background-image: url('/theme/img/fish.png');
+  height: 250px;
+  text-align: center;
 }
-.headerlink .icon-link::before {
-  content: '#';
-}
-h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink {
-  opacity: 1.0;
+.project-header h1 {
+  margin-bottom: 0.5em;
 }
 
-.searchbox {
-  border-top: 1px solid #bbb;
-  margin: 0 2em;
-  padding: 1em 0;
+.pitch {
+  background-color: #eee;
+  padding: 1.5em;
 }
-.searchbox input {
-  border: 1px solid #ccc;
-  color: #666;
-  line-height: 1.7;
-  padding: 0.2em 0.5em;
-  width: calc(100% - 1em - 2px);
+.pitch header {
+  text-align: center;
+}
+.pitch header img {
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+}
+.pitch header h2 { margin: 0; }
+.pitch .email {
+  font-family: monospace;
+  margin: 0;
+}
+.pitch p:last-of-type {
+  margin-bottom: 0;
 }
 
-.todo {
-  background: #d9edf7;
-  border: 1px solid #bcdff1;
-  color: #31708f;
-  padding: 0.5em 1em;
+@media screen and (min-width: 640px) {
+  .pitch header {
+    align-items: center;
+    display: flex;
+    text-align: left;
+  }
+  .pitch header img {
+    margin-right: 1em;
+  }
+}
+
+/* TODO */
+@media screen and (max-width: 767px) {
+  .pitch:nth-of-type(even) { background-color: unset; }
 }
 
 /*
  *  State
  */
-aside nav a.active {
-  background: #e6e6e6;
+nav li a.active { box-shadow: 0px 2px 0 #333; }
+@media screen and (min-width: 768px) {
+  nav li a.active {
+    animation: borderFadeIn 0.5s;
+    box-shadow: 0px 2px 0 #333, 0px -2px 0px #333;
+  }
+}
+@keyframes borderFadeIn {
+  from { box-shadow: 0px 2px 0 rgba(51,51,51,0.0), 0px -2px 0px rgba(51,51,51,0.0); }
+  to   { box-shadow: 0px 2px 0 rgba(51,51,51,1.0), 0px -2px 0px rgba(51,51,51,1.0); }
 }
 
 /*
  *  Page Specific
  */
-
-/* search results */
-.tipue_search_content_bold { font-weight: bold; }
-.tipue_search_content_title { margin-top: 1em; }
-.tipue_search_content_text { border-bottom: 1px solid #eee; }
