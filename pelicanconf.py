@@ -28,7 +28,7 @@ PATH_METADATA = 'pages/(?P<path>.*)\..*'
 
 MENUITEMS = (('home', 'index.html'),
              ('projects', 'projects.html'),
-             ('schedule', 'schedule.html'),
+             ('details', 'details.html'),
 )
 
 FEED_ALL_ATOM = None
