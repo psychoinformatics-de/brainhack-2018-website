@@ -27,6 +27,37 @@
        url('/theme/fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
        url('/theme/fonts/open-sans-v15-latin-regular.woff') format('woff');
 }
+@font-face {
+  font-family: 'fontello';
+  src: url('/theme/fonts/fontello.woff2?76864921') format('woff2'),
+       url('/theme/fonts/fontello.woff?76864921') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]::before, [class^="icon-"]::after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"]::after { display: none; }
+.icon-contact::before, .icon-contact::after { content: '\e800'; }
+.icon-people::before,  .icon-people::after  { content: '\e803'; }
+.icon-link::before,    .icon-link::after    { content: '\f07b'; }
+.icon-project::before, .icon-project::after { content: '\f10c'; }
 
 a {
   /* changing the border width causes a reflow, which looks choppy, causes other
@@ -329,6 +360,8 @@ footer span.break { display: block; }
   list-style: none;
   padding: 0;
 }
+.pitch .info [class^="icon-"]::before { margin-right: 0.5em; }
+.pitch .info [class^="icon-"]::after  { margin-left:  0.5em; }
 
 @media screen and (min-width: 640px) {
   .pitch header {
@@ -354,6 +387,8 @@ footer span.break { display: block; }
     text-align: right;
   }
   .pitch:nth-of-type(even) header img { margin: 0 0 0 1em; }
+  .pitch:nth-of-type(even) .info [class^="icon-"]::before { display: none; }
+  .pitch:nth-of-type(even) .info [class^="icon-"]::after  { display: initial; }
 }
 
 /*

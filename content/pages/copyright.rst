@@ -37,6 +37,17 @@ Notes:
 ----
 
 Files:
+  theme/css/style.css
+Copyright:
+  2016, Bucky Maler; 2018 Alex Waite, 2018 `Fontello`_
+License:
+  `MIT`_
+
+.. _Fontello: http://fontello.com/
+
+----
+
+Files:
   theme/img/collab.jpg
 Copyright:
   2014, StartupStockPhotos
@@ -50,12 +61,17 @@ Source:
 ----
 
 Files:
-  theme/fonts/raleway\*
+  theme/fonts/fontello\*
 Copyright:
-  Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida
+  `Font Awesome`_, `Modern Pictograms`_ (John Caserta),
+  `Elusive`_ (Aristeides Stathopoulos), and `MFG Labs`_
 License:
   `SIL OFL 1.1`_
 
+.. _Font Awesome: http://fontawesome.io/
+.. _Modern Pictograms: http://thedesignoffice.org/project/modern-pictograms
+.. _Elusive: https://github.com/reduxframework/elusive-iconfont
+.. _MFG Labs: https://github.com/MfgLabs/mfglabs-iconset
 .. _SIL OFL 1.1: http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
 
 ----
@@ -68,3 +84,12 @@ License:
   `Apache, version 2.0`_
 
 .. _Apache, version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+
+----
+
+Files:
+  theme/fonts/raleway\*
+Copyright:
+  Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida
+License:
+  `SIL OFL 1.1`_
