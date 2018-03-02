@@ -150,7 +150,10 @@ footer.card { margin-top: 0; }
   section.card:last-of-type { margin-bottom: 0.85em; }
 }
 .projects { margin: 0.85em auto 0 auto; }
-.pitch { margin: 0.85em 0; }
+.pitch {
+  margin: 0.85em 0;
+  padding: 1.5em;
+}
 
 @media screen and (min-width: 850px) {
   .projects {
@@ -160,6 +163,12 @@ footer.card { margin-top: 0; }
   }
   .pitch {
     flex-basis: calc(50% - 3.1em);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pitch {
+    padding: 1.5em 3em;
+    flex-basis: calc(50% - 6.1em);
   }
 }
 
@@ -339,7 +348,6 @@ footer span.break { display: block; }
   }
 }
 
-.pitch { padding: 1.5em; }
 .pitch:nth-of-type(odd) { background-color: #eee; }
 .pitch header { text-align: center; }
 .pitch header img {
