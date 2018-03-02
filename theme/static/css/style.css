@@ -121,7 +121,7 @@ footer.card { margin-top: 0; }
 .projects { margin: 0.85em auto 0 auto; }
 .pitch { margin: 0.85em 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .projects {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +158,7 @@ footer.card { margin-top: 0; }
   opacity: .95;
   width: 100%;
 }
-@media (min-width: 768px){
+@media (min-width: 640px) {
   .card p { margin: 1.5em 0.28em; }
 }
 @media (min-width: 1024px) {
@@ -312,25 +312,22 @@ footer span.break { display: block; }
   }
 }
 
-.pitch {
-  background-color: #eee;
-  padding: 1.5em;
-}
-.pitch header {
-  text-align: center;
-}
+.pitch { padding: 1.5em; }
+.pitch:nth-of-type(odd) { background-color: #eee; }
+.pitch header { text-align: center; }
 .pitch header img {
   border-radius: 100%;
   height: 80px;
   width: 80px;
 }
-.pitch header h2 { margin: 0; }
-.pitch .email {
-  font-family: monospace;
+.pitch header h2 {
+  font-size: 30px;
   margin: 0;
 }
-.pitch p:last-of-type {
-  margin-bottom: 0;
+.pitch p:last-of-type { margin-bottom: 0; }
+.pitch .info {
+  list-style: none;
+  padding: 0;
 }
 
 @media screen and (min-width: 640px) {
@@ -341,16 +338,22 @@ footer span.break { display: block; }
   }
   .pitch header img { margin: 0 1em 0 0; }
 }
-.pitch:nth-of-type(even) { text-align: right; }
-.pitch:nth-of-type(even) header {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.pitch:nth-of-type(even) header img { margin: 0 0 0 1em; }
-
-/* TODO */
-@media screen and (max-width: 767px) {
-  .pitch:nth-of-type(even) { background-color: unset; }
+@media screen and (min-width: 768px) {
+  .pitch { background-color: #eee; }
+  .pitch p {
+    max-width: 500px;
+    text-align: justify;
+  }
+  .pitch header h2 {
+    max-width: 420px;
+  }
+  .pitch:nth-of-type(even) p { margin-left: auto; }
+  .pitch:nth-of-type(even) { text-align: right; }
+  .pitch:nth-of-type(even) header {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .pitch:nth-of-type(even) header img { margin: 0 0 0 1em; }
 }
 
 /*
