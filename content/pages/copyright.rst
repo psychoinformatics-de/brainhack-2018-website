@@ -61,6 +61,17 @@ Source:
 ----
 
 Files:
+  theme/img/pitch_ph_clover.jpg
+Copyright:
+  2016, Jeon Sang O
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/leaf-nature-green-spring-abstract-1498985/
+
+----
+
+Files:
   theme/fonts/fontello\*
 Copyright:
   `Font Awesome`_, `Modern Pictograms`_ (John Caserta),
