@@ -60,10 +60,8 @@
 .icon-project::before, .icon-project::after { content: '\f10c'; }
 
 a {
-  /* changing the border width causes a reflow, which looks choppy, causes other
-   * elements to shift, and is really expensive. text-decoration isn't
-   * transition-able. Though a bit hacky, box-shadow meets all the requirements
-   * and neatly sidesteps the reflow problem. */
+  /* box-shadow has two main advantages 1) can be used with "transition" and
+     2) its size doesn't impact the position of other elements. */
   box-shadow: 0 1px 0px 0 #111;
   color: #111;
   text-decoration: none;
@@ -133,7 +131,6 @@ section.card {
   height: 600px;
   justify-content: space-around;
   overflow: hidden;
-  position: relative;
 }
 section.card:first-of-type { margin-top: 0; }
 section.card:last-of-type  { margin-bottom: 0.5em; }
@@ -142,6 +139,7 @@ section.card:last-of-type  { margin-bottom: 0.5em; }
   display: flex;
   height: 100%;
   max-width: 1180px;
+  width: 100%
 }
 footer.card { margin-top: 0; }
 @media (min-width: 768px) {
