@@ -61,6 +61,15 @@ Source:
 ----
 
 Files:
+  theme/img/brain_hero.png
+Copyright:
+  2018, Alex Waite, Laura Waite, Adina Wagner
+License:
+  `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
+
+----
+
+Files:
   theme/img/pitch_ph_clover.jpg
 Copyright:
   2016, Jeon Sang O
