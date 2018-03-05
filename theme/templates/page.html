@@ -5,7 +5,7 @@
   <nav class='card'>
     <ul>
     {% for title, link in MENUITEMS %}
-      <li><a href="{{ SITEURL }}{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
+      <li><a href="{{ SITEURL }}/{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
     {% endfor %}
     </ul>
   </nav>
