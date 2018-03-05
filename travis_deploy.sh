@@ -24,5 +24,3 @@ git commit -m "Automatically updated github page"
 git push origin HEAD:gh-pages
 
 rm .git/credentials
-
-
