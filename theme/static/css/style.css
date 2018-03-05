@@ -34,7 +34,7 @@
   font-weight: normal;
   font-style: normal;
 }
-[class^="icon-"]::before, [class^="icon-"]::after {
+[class^="icon-"]::before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -53,11 +53,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-[class^="icon-"]::after { display: none; }
-.icon-contact::before, .icon-contact::after { content: '\e800'; }
-.icon-people::before,  .icon-people::after  { content: '\e803'; }
-.icon-link::before,    .icon-link::after    { content: '\f07b'; }
-.icon-project::before, .icon-project::after { content: '\f10c'; }
+.icon-contact::before { content: '\e800'; }
+.icon-people::before  { content: '\e803'; }
+.icon-link::before    { content: '\f07b'; }
+.icon-project::before { content: '\f10c'; }
 
 a {
   /* box-shadow has two main advantages 1) can be used with "transition" and
@@ -147,13 +146,13 @@ footer.card { margin-top: 0; }
   .card { margin: 1.7em 0; }
   section.card:last-of-type { margin-bottom: 0.85em; }
 }
+
 .projects { margin: 0.85em auto 0 auto; }
 .pitch {
   margin: 0.85em 0;
   padding: 1.5em;
 }
-
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 768px) {
   .projects {
     display: flex;
     flex-wrap: wrap;
@@ -167,6 +166,11 @@ footer.card { margin-top: 0; }
   .pitch {
     padding: 1.5em 3em;
     flex-basis: calc(50% - 6.1em);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .pitch {
+    flex-basis: calc(33% - 5.8em);
   }
 }
 
@@ -337,7 +341,6 @@ footer span.break { display: block; }
   #project-landing .blurb {
     margin: 0 15% 0 auto;
     text-align: right;
-    max-width: 500px;
   }
 }
 
@@ -358,34 +361,8 @@ footer span.break { display: block; }
   padding: 0;
 }
 .pitch .info [class^="icon-"]::before { margin-right: 0.5em; }
-.pitch .info [class^="icon-"]::after  { margin-left:  0.5em; }
-
-@media screen and (min-width: 640px) {
-  .pitch header {
-    align-items: center;
-    display: flex;
-    text-align: left;
-  }
-  .pitch header img { margin: 0 1em 0 0; }
-}
 @media screen and (min-width: 768px) {
   .pitch { background-color: #eee; }
-  .pitch p {
-    max-width: 500px;
-    text-align: justify;
-  }
-  .pitch header h2 {
-    max-width: 420px;
-  }
-  .pitch:nth-of-type(even) p { margin-left: auto; }
-  .pitch:nth-of-type(even) { text-align: right; }
-  .pitch:nth-of-type(even) header {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-  .pitch:nth-of-type(even) header img { margin: 0 0 0 1em; }
-  .pitch:nth-of-type(even) .info [class^="icon-"]::before { display: none; }
-  .pitch:nth-of-type(even) .info [class^="icon-"]::after  { display: initial; }
 }
 
 /* Details Page */
