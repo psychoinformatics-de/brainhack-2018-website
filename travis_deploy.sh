@@ -17,7 +17,7 @@ git remote set-branches --add origin gh-pages
 git fetch origin
 git branch -a
 git checkout origin/gh-pages
-rsync -vr --checksum output/ .
+rsync -vr --checksum --exclude .git/ output/ .
 
 # commit new output folder and push
 git add .
