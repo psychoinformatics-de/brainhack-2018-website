@@ -1,6 +1,7 @@
 #!/bin/bash
-# simple script to use travis-encrypted github token and git user for updating docs folder whenever master branch was updated.
-# It assumes that make was done before and therefore docs is up-to-date locally.
+# use travis-encrypted github token and git user for updating the output/ folder
+# whenever master branch is updated. It assumes that `make` was done before and
+# therefore output/ is up-to-date locally.
 
 set -x
 git --version
@@ -16,9 +17,9 @@ git remote set-branches --add origin gh-pages
 git fetch origin
 git branch -a
 git checkout origin/gh-pages
-rsync -r docs/ .
+rsync -r output/ .
 
-# commit new docs folder and push
+# commit new output folder and push
 git add .
 git commit -m "Automatically updated github page"
 git push origin HEAD:gh-pages
