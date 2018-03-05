@@ -237,6 +237,7 @@ nav li a {
 section.card {
   background-position: 25px;
   background-repeat: no-repeat;
+  background-size: auto 600px;
 }
 #landing { /* SVG fill color in the SVG */
   background-color: #ff9e0d;
@@ -249,6 +250,7 @@ section.card {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.875 158.75"><g fill="#bbb" opacity="0.2"><path d="M89.31 125.592H41.674L32.3 158.729H.036L52.03.021h27.796l51.013 158.708H98.575zM49.196 99.541h32.92L65.874 41.115z"/></g></svg>'),
                     url('/theme/img/collab.jpg');
   background-position: 25px, center;
+  background-size: auto 600px, auto;
 }
 #equipment { /* SVG fill color in the SVG */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.875 158.75"><g fill="#e9e9e9"><path d="M19.547.021h91.78v24.744H80.372v109.33h30.957v24.634h-91.78v-24.635H49.74V24.764H19.547z"/></g></svg>');
