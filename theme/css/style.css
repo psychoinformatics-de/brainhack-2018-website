@@ -263,12 +263,17 @@ section.card {
 @media (min-width: 640px) {
   #landing .blurb {
     text-align: right;
+    margin-left: 12%;
+    max-width: 500px;
     width: 75%;
   }
   #landing .date { margin-top: 0; }
 }
 @media (min-width: 1024px) {
-  #landing .blurb { width: 45%; }
+  #landing .blurb {
+    margin-left: 0;
+    width: 45%;
+  }
   #landing .img-wrap { width: 55%; }
 }
 #landing h1 { margin-bottom: 0; }
