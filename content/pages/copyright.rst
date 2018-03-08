@@ -105,7 +105,7 @@ Source:
 Files:
   theme/img/pitch_ph_brain.png
 Copyright:
-  2018, Gerd Altman
+  2018, Gerd Altman; 2018, Laura Waite
 License:
   `Public Domain Dedication (CC0 1.0)`_
 Source:
@@ -138,7 +138,7 @@ Source:
 Files:
   theme/img/pitch_ph_limes.png
 Copyright:
-  2017, Silvia & Frank
+  2017, Silvia & Frank; 2018, Laura Waite
 License:
   `Public Domain Dedication (CC0 1.0)`_
 Source:
