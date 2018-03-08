@@ -81,6 +81,83 @@ Source:
 ----
 
 Files:
+  theme/img/pitch_ph_dots.png
+Copyright:
+  2011, Public Domain Pictures
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/bokeh-abstract-background-blur-21951/
+
+----
+
+Files:
+  theme/img/pitch_ph_paint.png
+Copyright:
+  2018, Агзам Гайсин
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/background-template-texture-crack-3177833/
+
+----
+
+Files:
+  theme/img/pitch_ph_brain.png
+Copyright:
+  2018, Gerd Altman
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/brain-biology-abstract-cerebrum-2836401/
+
+----
+
+Files:
+  theme/img/pitch_ph_coffee.png
+Copyright:
+  2016, ProSmile
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/cup-icon-glass-symbol-design-flat-1849083/
+
+----
+
+Files:
+  theme/img/pitch_ph_brick.png
+Copyright:
+  2017, Mabel Amber
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/wall-brick-wall-red-brick-wall-seam-3075100/
+
+----
+
+Files:
+  theme/img/pitch_ph_limes.png
+Copyright:
+  2017, Silvia & Frank
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/lime-lime-slices-citrus-fruit-2481346/
+
+----
+
+Files:
+  theme/img/pitch_ph_leaf.png
+Copyright:
+  2017, Français
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/fall-leaf-maple-canada-maple-leaves-2809845/
+
+----
+
+Files:
   theme/fonts/fontello\*
 Copyright:
   `Font Awesome`_, `Modern Pictograms`_ (John Caserta),
