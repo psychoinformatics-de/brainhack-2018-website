@@ -83,6 +83,8 @@ body {
   body { font-size: 16px; }
 }
 
+dl dt { font-weight: bold; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-family: 'Raleway', serif;
@@ -200,6 +202,13 @@ footer.card { margin-top: 0; }
   opacity: .95;
   width: 100%;
 }
+.card dl ul {
+  padding: 0;
+  margin: 0;
+}
+.card dl ul li {
+  list-style: none;
+}
 @media (min-width: 640px) {
   .card p { margin: 1.5em 0.28em; }
 }
@@ -306,13 +315,20 @@ section.card {
   #equipment .blurb { width: 65%; }
 }
 
-/* Five */
+
+/* Resources */
+#resources { text-align: left; }
+#resources .blurb .desc { display: none; }
 #resources .wrapper { justify-content: flex-end; }
+#resources dd .desc { display: none; }
 @media (min-width: 640px) {
   #resources .blurb {
     text-align: right;
     width: 75%;
   }
+}
+@media (min-width: 768px) {
+  #resources .blurb .desc { display: block; }
 }
 @media (min-width: 1024px) {
   #resources .blurb { width: 55%; }
