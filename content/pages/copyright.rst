@@ -61,6 +61,17 @@ Source:
 ----
 
 Files:
+  theme/img/giraffe.png
+Copyright:
+  2017, Ryan McGuire
+License:
+  https://gratisography.com/terms.html
+Source:
+  https://gratisography.com
+
+----
+
+Files:
   theme/img/brain_hero.png
 Copyright:
   2018, Alex Waite, Laura Waite, Adina Wagner
