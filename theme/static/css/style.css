@@ -84,6 +84,11 @@ body {
 }
 
 dl dt { font-weight: bold; }
+dl dd {
+  border-left: 2px solid #bbb;
+  margin-left: 0.25em;
+  padding-left: 0.5em;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
@@ -315,6 +320,11 @@ section.card {
   #resources .blurb {
     text-align: right;
     width: 75%;
+  }
+  #resources dl dd {
+    border-right: 2px solid #bbb; border-left: none;
+    margin: 0 0.1em 0 0;
+    padding: 0 0.5em 0 0;
   }
 }
 @media (min-width: 768px) {
