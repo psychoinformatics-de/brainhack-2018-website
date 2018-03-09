@@ -291,17 +291,19 @@ section.card {
   #about .blurb { width: 65%; }
 }
 
-/* Four */
+/* Equipment */
+#equipment { text-align: left; }
+#equipment .blurb dl dt { font-weight: bold; }
+#equipment .blurb dl dd .desc { display: none; }
 @media (min-width: 640px) {
   #equipment .wrapper { justify-content: center; }
   #equipment .blurb { width: 75%; }
 }
+@media (min-width: 768px) {
+  #equipment .blurb dl dd .desc { display: block; }
+}
 @media (min-width: 1024px) {
   #equipment .blurb { width: 65%; }
-}
-#equipment .blurb ul {
-  list-style-position: inside;
-  padding: 0;
 }
 
 /* Five */
