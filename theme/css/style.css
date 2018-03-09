@@ -302,14 +302,13 @@ section.card {
 
 /* Equipment */
 #equipment { text-align: left; }
-#equipment .blurb dl dt { font-weight: bold; }
-#equipment .blurb dl dd .desc { display: none; }
+#equipment .blurb .desc { display: none; }
 @media (min-width: 640px) {
   #equipment .wrapper { justify-content: center; }
   #equipment .blurb { width: 75%; }
 }
 @media (min-width: 768px) {
-  #equipment .blurb dl dd .desc { display: block; }
+  #equipment .blurb .desc { display: initial; }
 }
 @media (min-width: 1024px) {
   #equipment .blurb { width: 65%; }
@@ -328,7 +327,7 @@ section.card {
   }
 }
 @media (min-width: 768px) {
-  #resources .blurb .desc { display: block; }
+  #resources .blurb .desc { display: initial; }
 }
 @media (min-width: 1024px) {
   #resources .blurb { width: 55%; }
