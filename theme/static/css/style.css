@@ -410,6 +410,20 @@ footer span.break { display: block; }
   }
 }
 
+/* Default .rst content (including Details page) */
+div.section {
+  background: #efefef;
+  margin: 1em 0;
+  padding: 0.5em 1.5em;
+}
+@media (min-width: 768px) {
+  div.section { margin: 1.7em 0; }
+  div.section:last-of-type { margin-bottom: 0.85em; }
+}
+@media (min-width: 1024px) {
+  div.section { padding: 0.5em 30% 0.5em 15%; }
+}
+
 /*
  *  State
  */
