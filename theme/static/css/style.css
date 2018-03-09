@@ -85,7 +85,7 @@ body {
 
 dl dt { font-weight: bold; }
 dl dd {
-  border-left: 2px solid #bbb;
+  border-left: 2px solid #ddd;
   margin-left: 0.25em;
   padding-left: 0.5em;
 }
@@ -327,7 +327,7 @@ section.card {
     width: 75%;
   }
   #resources dl dd {
-    border-right: 2px solid #bbb; border-left: none;
+    border-right: 2px solid #ddd; border-left: none;
     margin: 0 0.1em 0 0;
     padding: 0 0.5em 0 0;
   }
