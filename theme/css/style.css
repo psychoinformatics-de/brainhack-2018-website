@@ -183,16 +183,6 @@ footer.card { margin-top: 0; }
   text-align: center;
   z-index: 0;
 }
-.card .blurb h2::before, .card .blurb h2::after {
-  background-color: #111;
-  bottom: 0.3em;
-  content: "";
-  display: none;
-  height: 1px;
-  position: relative;
-  margin: 0 0.5em;
-  width: 1.5em;
-}
 .card .img-wrap {
   display: none;
   line-height: 0;
@@ -296,7 +286,6 @@ section.card {
     margin-left: auto;
     width: 75%;
   }
-  #about .blurb h2::before { display: inline-block; }
 }
 @media (min-width: 1024px) {
   #about .blurb { width: 65%; }
@@ -335,9 +324,6 @@ section.card {
   #resources .blurb { width: 55%; }
   #resources .img-wrap { width: 45%; }
   #resources .img-wrap img { width: 85%; }
-}
-@media (min-width: 640px) {
-  #resources .blurb h2::before { display: inline-block; }
 }
 
 /* Footer */
