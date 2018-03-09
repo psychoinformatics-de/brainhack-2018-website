@@ -300,14 +300,19 @@ section.card {
 #equipment { text-align: left; }
 #equipment .blurb .desc { display: none; }
 @media (min-width: 640px) {
-  #equipment .wrapper { justify-content: center; }
-  #equipment .blurb { width: 75%; }
+  #equipment .blurb {
+    margin-left: 6%;
+    width: 75%;
+  }
 }
 @media (min-width: 768px) {
   #equipment .blurb .desc { display: initial; }
 }
 @media (min-width: 1024px) {
-  #equipment .blurb { width: 65%; }
+  #equipment .blurb {
+    margin-left: 12%;
+    width: 65%;
+  }
 }
 
 
