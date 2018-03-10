@@ -1,5 +1,5 @@
-Details
-#######
+Event Details
+#############
 :save_as: details.html
 :url: details.html
 
@@ -8,7 +8,7 @@ Details
     <section id='details-landing' class='card'>
       <div class="wrapper">
         <div class='blurb'>
-          <h1><strong>Details</strong></h1>
+          <h1>Event <strong>Details</strong></h1>
           <p>Also known as: "everything that is important."</p>
         </div>
       </div>
