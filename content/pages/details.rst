@@ -21,6 +21,13 @@ You can email brainhack@psychoinformatics.de regarding any topic related to this
 
 Schedule
 ========
+
+The basic idea is to start the event on Thursday afternoon with some
+introduction and a get-together. All of Friday and Saturday are dedicated to
+hacking on the projects, with a few break-out or unconference sessions
+happening as needed. On Saturday evening there will be a wrap-up session with
+short presentations on the achievements of all individual projects.
+
 Due to the nature of the event, the schedule is flexible and can change
 frequently. To stay up-to-date you can subscribe to a `Google calendar
 <https://tinyurl.com/ybx23trf>`_.
