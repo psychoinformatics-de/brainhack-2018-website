@@ -16,20 +16,19 @@ Details
 
 Contact
 =======
-
-You can email brainhack@psychoinformatics.de regarding any topic related to this event.
+You can email brainhack@psychoinformatics.de regarding any topic related to the
+event.
 
 Schedule
 ========
-
-The basic idea is to start the event on Thursday afternoon with some
-introduction and a get-together. All of Friday and Saturday are dedicated to
-hacking on the projects, with a few break-out or unconference sessions
-happening as needed. On Saturday evening there will be a wrap-up session with
-short presentations on the achievements of all individual projects.
+The event will start Thursday afternoon with introductions and a get-together.
+All day Friday and Saturday are dedicated to hacking on projects, with
+tutorials and break-out/unconference sessions happening as needed.
+Early-evening on Saturday, there will be a wrap-up session with a short
+presentation from each project on their achievements.
 
 Due to the nature of the event, the schedule is flexible and can change
-frequently. To stay up-to-date you can subscribe to a `Google calendar
+frequently. To stay up-to-date, you can subscribe to a `Google calendar
 <https://tinyurl.com/ybx23trf>`_.
 
 Alternatively, you can use the free and open source
@@ -69,7 +68,6 @@ but you gotta pay the price.
 
 Transportation
 ==============
-
 While Magdeburg has an airport, most people will want to fly to
 `LEJ <https://www.leipzig-halle-airport.de/>`_ or
 `BER <http://www.berlin-airport.de>`_ and then take the train to Magdeburg,
@@ -85,9 +83,8 @@ distance. If you want to get around the city, there are trams and buses.
 
 Organizers
 ==========
-
-This event is organized by a bunch of self-selected people from Magdeburg that
-love to see a brainhack happening in Magdeburg (in alphabethical order):
+This event is organized by a collection of self-selected people who are excited
+to make BrainHack Magdeburg a reality (in alphabetical order):
 
 - Christian Olaf Häusler, Psychoinformatics Lab, Otto-von-Guericke University
 
