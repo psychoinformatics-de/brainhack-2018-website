@@ -14,6 +14,11 @@ Details
       </div>
     </section>
 
+Contact
+=======
+
+You can email brainhack@psychoinformatics.de regarding any topic related to this event.
+
 Schedule
 ========
 Due to the nature of the event, the schedule is flexible and can change
@@ -70,3 +75,36 @@ Otherwise, Magdeburg is easy to get to from all directions by
 
 The main venue and all accommodation options mentioned above are in walking
 distance. If you want to get around the city, there are trams and buses.
+
+Organizers
+==========
+
+This event is organized by a bunch of self-selected people from Magdeburg that
+love to see a brainhack happening in Magdeburg (in alphabethical order):
+
+- Christian Olaf Häusler, Psychoinformatics Lab, Otto-von-Guericke University
+
+- Michael Hanke, Psychoinformatics Lab, Otto-von-Guericke University
+  and Center for Behavioral Brain Sciences
+
+- Falk Lüsebrink, Department of Biomedical Magnetic Resonance,
+  Otto-von-Guericke University
+
+- Claudia Preuschhof, Clinical Developmental Psychology, Otto-von-Guericke
+  University and Center for Behavioral Brain Sciences
+
+- Jörg Stadler, Combinatorial NeuroImaging Core Facility (CNI) and Special
+  Lab Non-Invasive Brain Imaging, Leibniz Institute for Neurobiology (LIN)
+
+- Johannes Steffen, Image Processing & Understanding Group, Faculty of Computer
+  Science, Department of Simulation and Graphics, Otto-von-Guericke University
+
+- José P. Valdés-Herrera, Aging & Cognition Research Group, German Center for
+  Neurodegenerative Diseases (DZNE)
+
+- Adina Wagner, Psychoinformatics Lab, Otto-von-Guericke University
+
+- Alex Waite, Psychoinformatics Lab, Otto-von-Guericke University
+
+- Jiahua Xu, Data & Knowledge Engineering Group, Faculty of Computer Science and
+  Institute of Medical Psychology, Otto-von-Guericke University
