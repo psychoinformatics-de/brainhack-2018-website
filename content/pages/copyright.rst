@@ -160,7 +160,7 @@ Source:
 Files:
   theme/img/pitch_ph_leaf.png
 Copyright:
-  2017, Français
+  2017, Design_Miss_C
 License:
   `Public Domain Dedication (CC0 1.0)`_
 Source:
