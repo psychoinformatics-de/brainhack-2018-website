@@ -86,29 +86,29 @@ Organizers
 This event is organized by a collection of self-selected people who are excited
 to make BrainHack Magdeburg a reality (in alphabetical order):
 
-- Christian Olaf Häusler, Psychoinformatics Lab, Otto-von-Guericke University
+- **Christian Olaf Häusler**, Psychoinformatics Lab, Otto-von-Guericke University
 
-- Michael Hanke, Psychoinformatics Lab, Otto-von-Guericke University
+- **Michael Hanke**, Psychoinformatics Lab, Otto-von-Guericke University
   and Center for Behavioral Brain Sciences
 
-- Falk Lüsebrink, Department of Biomedical Magnetic Resonance,
+- **Falk Lüsebrink**, Department of Biomedical Magnetic Resonance,
   Otto-von-Guericke University
 
-- Claudia Preuschhof, Clinical Developmental Psychology, Otto-von-Guericke
+- **Claudia Preuschhof**, Clinical Developmental Psychology, Otto-von-Guericke
   University and Center for Behavioral Brain Sciences
 
-- Jörg Stadler, Combinatorial NeuroImaging Core Facility (CNI) and Special
+- **Jörg Stadler**, Combinatorial NeuroImaging Core Facility (CNI) and Special
   Lab Non-Invasive Brain Imaging, Leibniz Institute for Neurobiology (LIN)
 
-- Johannes Steffen, Image Processing & Understanding Group, Faculty of Computer
+- **Johannes Steffen**, Image Processing & Understanding Group, Faculty of Computer
   Science, Department of Simulation and Graphics, Otto-von-Guericke University
 
-- José P. Valdés-Herrera, Aging & Cognition Research Group, German Center for
+- **José P. Valdés-Herrera**, Aging & Cognition Research Group, German Center for
   Neurodegenerative Diseases (DZNE)
 
-- Adina Wagner, Psychoinformatics Lab, Otto-von-Guericke University
+- **Adina Wagner**, Psychoinformatics Lab, Otto-von-Guericke University
 
-- Alex Waite, Psychoinformatics Lab, Otto-von-Guericke University
+- **Alex Waite**, Psychoinformatics Lab, Otto-von-Guericke University
 
-- Jiahua Xu, Data & Knowledge Engineering Group, Faculty of Computer Science and
+- **Jiahua Xu**, Data & Knowledge Engineering Group, Faculty of Computer Science and
   Institute of Medical Psychology, Otto-von-Guericke University
