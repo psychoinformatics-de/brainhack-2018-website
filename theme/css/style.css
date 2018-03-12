@@ -133,7 +133,7 @@ nav.card {
 }
 section.card {
   display: flex;
-  height: 600px;
+  min-height: 600px;
   justify-content: space-around;
   overflow: hidden;
 }
@@ -142,7 +142,6 @@ section.card:last-of-type  { margin-bottom: 0.5em; }
 .card .wrapper {
   align-items: center;
   display: flex;
-  height: 100%;
   max-width: 1180px;
   width: 100%
 }
@@ -282,12 +281,10 @@ section.card {
 #landing h1 { margin-bottom: 0; }
 
 /* About */
-#about .blurb { font-size: 12px; }
 #about .wrapper { justify-content: flex-end; }
 @media (min-width: 640px) {
   #about .blurb  { text-align: right; }
   #about .blurb p {
-    font-size: 14px;
     margin-left: auto;
     width: 75%;
   }
