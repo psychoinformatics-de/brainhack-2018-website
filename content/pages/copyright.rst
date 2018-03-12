@@ -90,6 +90,17 @@ License:
 ----
 
 Files:
+  theme/img/pitch_audio.png
+Copyright:
+  2016, OpenClipart-Vectors
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/audio-music-sfa-jazz-sound-wave-1293262/
+
+----
+
+Files:
   theme/img/pitch_ph_clover.jpg
 Copyright:
   2016, Jeon Sang O
