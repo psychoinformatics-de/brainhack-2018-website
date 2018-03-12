@@ -10,7 +10,7 @@ This page loosely follows `Debian's copyright file syntax`_.
 Files:
   \*
 Copyright:
-  2018, Alex Waite. Much content was added by others; see git commit log for authorship.
+  2018, Alex Waite
 License:
   `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
 
@@ -19,9 +19,18 @@ License:
 ----
 
 Files:
+  content/\*
+Copyright:
+  2018, Brainhack Magdeburg; see git commit log for authorship
+License:
+  `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
+
+----
+
+Files:
   theme/\*
 Copyright:
-  2016, Bucky Maler, 2018 Alex Waite
+  2016, Bucky Maler; 2018, Alex Waite
 License:
   `MIT`_
 Notes:
@@ -39,7 +48,7 @@ Notes:
 Files:
   theme/css/style.css
 Copyright:
-  2016, Bucky Maler; 2018 Alex Waite, 2018 `Fontello`_
+  2016, Bucky Maler; 2018, Alex Waite; 2018, `Fontello`_
 License:
   `MIT`_
 
