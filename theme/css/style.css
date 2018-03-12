@@ -127,16 +127,15 @@ main {
 }
 .card {
   margin: 1em 0;
-  padding: 0 1.5em;
 }
 nav.card {
   margin: 0.8em 0;
-  padding: 0;
 }
 header.card {
   margin: 0;
   min-height: 300px;
 }
+header.card .blurb { margin: 0; }
 header.card h1 { margin: 0 0 0.5em 0; }
 @media (min-width: 640px) {
   header.card .blurb {
@@ -154,6 +153,7 @@ section.card:last-of-type  { margin-bottom: 0.5em; }
   align-items: center;
   display: flex;
   max-width: 1180px;
+  padding: 1.5em;
   width: 100%
 }
 footer.card { margin-top: 0; }
@@ -285,10 +285,6 @@ header.card, section.card {
 /* Landing */
 #landing { min-height: 600px; }
 #landing h1 { margin-bottom: 0; }
-header.card .blurb {
-  margin: 0;
-  width: 65%;
-}
 @media (min-width: 640px) {
   #landing .blurb {
     text-align: right;
