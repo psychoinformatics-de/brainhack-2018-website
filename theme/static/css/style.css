@@ -390,6 +390,13 @@ footer span.break { display: block; }
   .pitch { background-color: #eee; }
 }
 
+.pitch span.project, .pitch span.tutorial {
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+}
+.pitch .project  { color: #ec470e; }
+.pitch .tutorial { color: #37ab00; }
+
 /* Details Page */
 
 /* Default .rst content (including Details page) */
