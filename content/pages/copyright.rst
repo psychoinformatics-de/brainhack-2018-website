@@ -83,9 +83,15 @@ Source:
 Files:
   theme/img/brain_hero.png
 Copyright:
-  2018, Alex Waite, Laura Waite, Adina Wagner
+  2018, Alex Waite, Laura Waite, Adina Wagner: CC-BY-SA; 2017 Klausi Hausmann: CC0
 License:
   `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
+Notes:
+  The hero image was shot by Alex, developed by Laura, and edited by Adina and
+  Alex. The reflection in the glasses came from an image shared by Klaus
+  Hausmann.
+Source:
+  https://pixabay.com/en/rage-angry-explosion-head-explode-2317995/
 
 ----
 
