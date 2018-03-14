@@ -14,10 +14,11 @@ Event Details
       </div>
     </header>
 
-Contact
-=======
-You can email brainhack@psychoinformatics.de regarding any topic related to the
-event.
+    <div class='section'>
+      <p>Contact us at
+        <a href='mailto:brainhack@psychoinformatics.de'>brainhack@psychoinformatics.de</a>
+        for anything related to this event.</p>
+    </div>
 
 Schedule
 ========
