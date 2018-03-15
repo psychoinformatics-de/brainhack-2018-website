@@ -45,7 +45,7 @@ Venue
 =====
 The event will take place on the `main university campus
 <https://www.openstreetmap.org/#map=18/52.13985/11.64565>`_ in Magdeburg. While
-some details a still in flux, we will have multiple hack rooms with solid
+some details are still in flux, we will have multiple hack rooms with solid
 wireless *and* wired network.
 
 The weather will be great; there is a park right around the corner, and places
