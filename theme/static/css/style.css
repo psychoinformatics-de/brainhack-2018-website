@@ -195,7 +195,6 @@ footer.card { margin-top: 0; }
 .card {
   background-color: #efefef;
   text-align: center;
-  z-index: 0;
 }
 .card .img-wrap {
   display: none;
