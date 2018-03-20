@@ -206,6 +206,17 @@ Source:
 ----
 
 Files:
+  theme/img/pitch_vr.png
+Copyright:
+  2017, Pixaline
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/virtual-reality-play-glasses-2055227/
+
+----
+
+Files:
   theme/fonts/fontello\*
 Copyright:
   `Font Awesome`_, `Modern Pictograms`_ (John Caserta),
