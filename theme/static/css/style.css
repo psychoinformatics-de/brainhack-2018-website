@@ -395,12 +395,9 @@ footer span.break { display: block; }
   margin: 0;
 }
 .pitch p:last-of-type { margin-bottom: 0; }
-.pitch .info {
-  padding: 0;
-}
-@media screen and (min-width: 768px) {
-  .pitch { background-color: #eee; }
-}
+
+.pitch .info { padding-left: 1.5em; }
+.pitch .info li[class^="icon-"]::before { margin-left: -1.5em; }
 
 .pitch span.project, .pitch span.tutorial {
   font-family: 'Raleway', serif;
@@ -408,6 +405,10 @@ footer span.break { display: block; }
 }
 .pitch .project  { color: #ec470e; }
 .pitch .tutorial { color: #37ab00; }
+
+@media screen and (min-width: 768px) {
+  .pitch { background-color: #eee; }
+}
 
 /* Details Page */
 
