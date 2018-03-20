@@ -96,6 +96,17 @@ Source:
 ----
 
 Files:
+  theme/img/pitch_3d.png
+Copyright:
+  2017, OpenClipart-Vectors
+License:
+  `Public Domain Dedication (CC0 1.0)`_
+Source:
+  https://pixabay.com/en/background-cube-design-isometric-2025316/
+
+----
+
+Files:
   theme/img/pitch_audio.png
 Copyright:
   2016, OpenClipart-Vectors
