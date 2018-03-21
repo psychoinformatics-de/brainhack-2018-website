@@ -139,7 +139,6 @@ header.card h1 { margin: 0 0 0.5em 0; }
 @media (min-width: 640px) {
   header.card .blurb {
     margin: 0 15% 0 auto;
-    width: 65%;
   }
 }
 section.card, header.card {
@@ -199,6 +198,8 @@ dd .extra { display: none; }
 
 .card {
   background-color: #efefef;
+}
+.card .blurb {
   text-align: center;
 }
 .card .img-wrap {
@@ -215,13 +216,14 @@ dd .extra { display: none; }
 }
 header.card {
   background-color: #ff9e0d;
-  text-align: center;
 }
 @media (min-width: 640px) {
   .card p { margin: 1em 0.28em; }
-  header.card .blurb {
-    text-align: right;
+  .card .blurb {
+    text-align: left;
+    width: 75%;
   }
+  header.card .blurb { text-align: right; }
 }
 @media (min-width: 1024px) {
   .card .img-wrap { display: unset; }
@@ -231,7 +233,6 @@ header.card {
 @media (min-width: 640px) {
   .card.right .blurb  {
     text-align: right;
-    width: 75%;
   }
   .card.right dl dd {
     border-right: 2px solid #ddd; border-left: none;
@@ -240,7 +241,7 @@ header.card {
   }
 }
 @media (min-width: 1024px) {
-  .card.right .blurb { width: 50%; }
+  .card .blurb { width: 50%; }
 }
 
 /* Navigation */
@@ -306,10 +307,8 @@ header.card, section.card {
 #landing h1 { margin-bottom: 0; }
 @media (min-width: 640px) {
   #landing .blurb {
-    text-align: right;
     margin-left: 12%;
     max-width: 500px;
-    width: 75%;
   }
   #landing .date { margin-top: 0; }
 }
@@ -339,7 +338,6 @@ header.card, section.card {
 @media (min-width: 640px) {
   #equipment .blurb {
     margin-left: 6%;
-    width: 75%;
   }
 }
 @media (min-width: 1024px) {
