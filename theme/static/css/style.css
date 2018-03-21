@@ -192,6 +192,11 @@ footer.card { margin-top: 0; }
 /*
  *  Modules
  */
+dd .extra { display: none; }
+@media (min-width: 768px) {
+  dd .extra { display: initial; }
+}
+
 .card {
   background-color: #efefef;
   text-align: center;
@@ -331,15 +336,11 @@ header.card, section.card {
 
 /* Equipment */
 #equipment { text-align: left; }
-#equipment .blurb .desc { display: none; }
 @media (min-width: 640px) {
   #equipment .blurb {
     margin-left: 6%;
     width: 75%;
   }
-}
-@media (min-width: 768px) {
-  #equipment .blurb .desc { display: initial; }
 }
 @media (min-width: 1024px) {
   #equipment .blurb {
@@ -350,11 +351,6 @@ header.card, section.card {
 
 /* Resources */
 #resources { text-align: left; }
-#resources .blurb .desc { display: none; }
-#resources dd .desc { display: none; }
-@media (min-width: 768px) {
-  #resources .blurb .desc { display: initial; }
-}
 @media (min-width: 1024px) {
   #resources .blurb { width: 55%; }
   #resources .img-wrap { width: 45%; }
