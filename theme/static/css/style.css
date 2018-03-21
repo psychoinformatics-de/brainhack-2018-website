@@ -221,6 +221,7 @@ header.card {
   .card p { margin: 1em 0.28em; }
   .card .blurb {
     text-align: left;
+    max-width: 600px;
     width: 75%;
   }
   header.card .blurb { text-align: right; }
@@ -311,7 +312,6 @@ header.card, section.card {
 @media (min-width: 640px) {
   #landing .blurb {
     margin-left: 12%;
-    max-width: 500px;
   }
   #landing .date { margin-top: 0; }
 }
@@ -344,10 +344,7 @@ header.card, section.card {
   }
 }
 @media (min-width: 1024px) {
-  #equipment .blurb {
-    margin-left: 12%;
-    width: 65%;
-  }
+  #equipment .blurb { margin-left: 12%; }
 }
 
 /* Resources */
