@@ -70,13 +70,14 @@ Source:
 ----
 
 Files:
-  theme/img/giraffe.png
+  theme/img/floppies.png
 Copyright:
-  2017, Ryan McGuire
+  2018, Alex Waite; 2015 ECEL777NXT; 2017, Jud McCranie
 License:
-  https://gratisography.com/terms.html
+  `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
 Source:
-  https://gratisography.com
+  https://commons.wikimedia.org/wiki/File:%D0%94%D0%B8%D1%81%D0%BA%D0%B5%D1%82%D0%B0_5,25_%D0%B4%D1%8E%D0%B9%D0%BC%D0%B0_(%D0%92%D0%B8%D0%B4_%D1%81_%D0%BB%D0%B8%D1%86%D0%B5%D0%B2%D0%BE%D0%B9_%D0%B8_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD).jpg
+  https://commons.wikimedia.org/wiki/File:5.25_inch_floppy_disk,_front_and_back.jpg
 
 ----
 
