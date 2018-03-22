@@ -237,6 +237,9 @@ header.card {
   }
 }
 @media (min-width: 1024px) {
+  .card.with-art .wrapper, .card.with-art.right .wrapper {
+    justify-content: space-between;
+  }
   .card.with-art .blurb {
     width: 55%;
   }
