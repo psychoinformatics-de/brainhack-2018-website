@@ -339,7 +339,7 @@ header.card, section.card {
 /* Resources */
 #resources { text-align: left; }
 @media (min-width: 1024px) {
-  #resources .img-wrap img { width: 85%; }
+  #resources .img-wrap img { width: 95%; }
 }
 
 /* Footer */
