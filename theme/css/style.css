@@ -385,8 +385,6 @@ footer span.break { display: block; }
   .pitch { background-color: #eee; }
 }
 
-/* Details Page */
-
 /* Default .rst content (including Details page) */
 div.section {
   background: #efefef;
@@ -416,6 +414,21 @@ nav li a.active { box-shadow: 0px 2px 0 #333; }
   to   { box-shadow: 0px 2px 0 rgba(51,51,51,1.0), 0px -2px 0px rgba(51,51,51,1.0); }
 }
 
-/*
- *  Page Specific
+/* This is so links to anchors visually maintain the margin at the top of cards.
+ * I can't find the portion of the spec that indicates where a browser should
+ * scroll to when navigating to an anchor. But it seems to be 1px above the
+ * target --- and ignores margin and ::before content. I chose to abuse borders
+ * because padding wouldn't work (background issues abound).
+ *
+ * The calc()s below are to avoid a 1px band along the top of the previous card.
  */
+.card:target {
+  margin-top: calc(-0.9em + 1px);
+  border-top: calc(0.9em - 1px) solid #fafafa;
+}
+@media (min-width: 768px) {
+  .card:target {
+    margin-top: calc(-1.7em + 1px);
+    border-top: calc(1.7em - 1px) solid #fafafa;
+  }
+}
