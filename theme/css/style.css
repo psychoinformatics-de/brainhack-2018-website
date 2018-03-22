@@ -237,6 +237,9 @@ header.card {
   }
 }
 @media (min-width: 1024px) {
+  .card.with-art .wrapper, .card.with-art.right .wrapper {
+    justify-content: space-between;
+  }
   .card.with-art .blurb {
     width: 55%;
   }
@@ -339,7 +342,7 @@ header.card, section.card {
 /* Resources */
 #resources { text-align: left; }
 @media (min-width: 1024px) {
-  #resources .img-wrap img { width: 85%; }
+  #resources .img-wrap img { width: 95%; }
 }
 
 /* Footer */
