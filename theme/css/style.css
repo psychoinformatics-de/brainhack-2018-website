@@ -332,12 +332,12 @@ nav li a {
   #equipment .blurb { margin-left: 6%; }
 }
 @media (min-width: 768px) {
-  dl {
+  #equipment dl {
     column-count: 2;
     column-gap: 2em;
     max-width: 800px;
   }
-  dt, dd {
+  #equipment dt, #equipment dd {
     break-inside: avoid;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
@@ -345,7 +345,7 @@ nav li a {
 }
 @media (min-width: 1024px) {
   #equipment .blurb { margin-left: 12%; }
-  dl { column-gap: 3em; }
+  #equipment dl { column-gap: 3em; }
 }
 
 /* Resources */
