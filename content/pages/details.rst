@@ -11,7 +11,7 @@ Event Details
       </svg>
       <div class="wrapper">
         <div class='blurb'>
-          <h1>Event <strong>Details</strong></h1>
+          <h1>Event <span class='bold'>Details</span></h1>
           <p>Also known as: "everything that is important."</p>
         </div>
       </div>

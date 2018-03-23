@@ -202,6 +202,8 @@ dd .extra { display: none; }
   dd .extra { display: initial; }
 }
 
+.bold { font-weight: bold; }
+
 /* cards */
 .card {
   background-color: #efefef;
