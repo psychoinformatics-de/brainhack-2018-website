@@ -133,13 +133,13 @@ main {
   padding: 0 1.5em;
 }
 .card {
-  margin: 1em 0;
+  margin-top: 1em;
 }
 nav.card {
   margin: 0.8em 0;
 }
 header.card {
-  margin: 0;
+  margin-top: 0;
   min-height: 300px;
 }
 header.card h1 { margin: 0 0 0.5em 0; }
@@ -153,7 +153,6 @@ section.card, header.card {
   justify-content: space-around;
 }
 section.card { min-height: 600px; }
-section.card:last-of-type  { margin-bottom: 0.5em; }
 .card .wrapper {
   align-items: center;
   display: flex;
@@ -161,16 +160,15 @@ section.card:last-of-type  { margin-bottom: 0.5em; }
   padding: 1.5em;
   width: 100%
 }
-footer.card { margin-top: 0; }
+footer.card { margin: 0.5em 0; }
 @media (min-width: 768px) {
   main { padding: 0 1.7em; }
-  .card { margin: 1.7em 0; }
-  section.card:last-of-type { margin-bottom: 0.85em; }
+  .card { margin-top: 1.7em; }
+  footer.card { margin: 0.85em 0; }
 }
 
-.projects { margin: 0.85em auto 0 auto; }
 .pitch {
-  margin: 0.85em 0;
+  margin-top: 1em;
   padding: 1.5em;
 }
 @media screen and (min-width: 768px) {
@@ -185,6 +183,7 @@ footer.card { margin-top: 0; }
 }
 @media screen and (min-width: 1024px) {
   .pitch {
+    margin-top: 1.7em;
     padding: 1.5em 3em;
     flex-basis: calc(50% - 6.1em);
   }
@@ -395,12 +394,11 @@ footer span.break { display: block; }
 /* Default .rst content (including Details page) */
 div.section {
   background: #efefef;
-  margin: 1em 0;
+  margin-top: 1em;
   padding: 0.5em 1.5em;
 }
 @media (min-width: 768px) {
-  div.section { margin: 1.7em 0; }
-  div.section:last-of-type { margin-bottom: 0.85em; }
+  div.section { margin-top: 1.7em; }
 }
 @media (min-width: 1024px) {
   div.section { padding: 0.5em 30% 0.5em 15%; }
@@ -426,16 +424,11 @@ nav li a.active { box-shadow: 0 2px 0 #333; }
  * scroll to when navigating to an anchor. But it seems to be 1px above the
  * target --- and ignores margin and ::before content. I chose to abuse borders
  * because padding wouldn't work (background issues abound).
- *
- * The calc()s below are to avoid a 1px band along the top of the previous card.
  */
 .card:target {
-  margin-top: calc(-0.9em + 1px);
-  border-top: calc(0.9em - 1px) solid #fafafa;
+  margin-top: 1px; /* avoid seeing a 1px band of the previous card */
+  border-top: 0.9em solid #fafafa;
 }
 @media (min-width: 768px) {
-  .card:target {
-    margin-top: calc(-1.7em + 1px);
-    border-top: calc(1.7em - 1px) solid #fafafa;
-  }
+  .card:target { border-top-width: 1.7em; }
 }
