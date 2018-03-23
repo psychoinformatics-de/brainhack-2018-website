@@ -222,6 +222,12 @@ dd .extra { display: none; }
 }
 header.card { background-color: #ff9e0d; }
 header.card svg { fill: #f99508; }
+
+.card.image-only { background-position: center; }
+.card.image-only svg {
+  fill: #bbb;
+  opacity: 0.2;
+}
 .card.right .wrapper {
   justify-content: flex-end;
 }
@@ -292,7 +298,6 @@ nav li a {
 
 #three {
   background-image: url('/theme/img/collab.jpg');
-  background-position: center;
 }
 
 /* Landing */
