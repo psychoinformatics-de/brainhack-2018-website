@@ -358,7 +358,10 @@ footer.card p {
   margin: 0;
   padding: 0.5em 1em;
 }
-footer span.break { display: block; }
+footer span.break {
+  display: block;
+  line-height: 0.5em;
+}
 @media screen and (min-width: 850px) {
   footer span.break { display: inline; }
 }
