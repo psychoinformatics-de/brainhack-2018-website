@@ -87,7 +87,7 @@ body {
 
 dl dt {
   font-weight: bold;
-  margin-top: 0.5em;
+  padding-top: 0.5em;
 }
 dl dd { margin: 0; }
 
@@ -115,7 +115,7 @@ h3 {
     font-size: 42px;
   }
   dl dt {
-    margin-left: calc(0.5em + 2px);
+    padding-left: calc(0.5em + 2px);
   }
   dl dd {
     border: 0 solid #ddd;
@@ -251,7 +251,7 @@ header.card svg { fill: #f99508; }
   header.card .blurb { text-align: right; }
   .card.right .blurb { text-align: right; }
   .card.right dl dt {
-    margin-right: calc(0.5em + 2px); margin-left: 0;
+    padding-right: calc(0.5em + 2px); padding-left: 0;
   }
   .card.right dl dd {
     border-width: 0 2px 0 0;
