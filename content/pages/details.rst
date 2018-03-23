@@ -85,7 +85,7 @@ distance. If you want to get around the city, there are trams and buses.
 Organizers
 ==========
 This event is organized by a collection of self-selected people who are excited
-to make BrainHack Magdeburg a reality (in alphabetical order):
+to make BrainHack Magdeburg a reality. In alphabetical order:
 
 - **Christian Olaf Häusler**, Psychoinformatics Lab, Otto-von-Guericke University
 
