@@ -251,7 +251,7 @@ header.card svg { fill: #f99508; }
   header.card .blurb { text-align: right; }
   .card.right .blurb { text-align: right; }
   .card.right dl dt {
-    margin: 0 calc(0.5em + 2px) 0 0;
+    margin-right: calc(0.5em + 2px); margin-left: 0;
   }
   .card.right dl dd {
     border-width: 0 2px 0 0;
