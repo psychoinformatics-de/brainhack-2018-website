@@ -87,7 +87,7 @@ body {
 
 dl dt {
   font-weight: bold;
-  margin-top: 0.5em;
+  padding-top: 0.5em;
 }
 dl dd { margin: 0; }
 
@@ -115,7 +115,7 @@ h3 {
     font-size: 42px;
   }
   dl dt {
-    margin-left: calc(0.5em + 2px);
+    padding-left: calc(0.5em + 2px);
   }
   dl dd {
     border: 0 solid #ddd;
@@ -251,7 +251,7 @@ header.card svg { fill: #f99508; }
   header.card .blurb { text-align: right; }
   .card.right .blurb { text-align: right; }
   .card.right dl dt {
-    margin-right: calc(0.5em + 2px); margin-left: 0;
+    padding-right: calc(0.5em + 2px); padding-left: 0;
   }
   .card.right dl dd {
     border-width: 0 2px 0 0;
@@ -326,11 +326,26 @@ nav li a {
 #landing a#sign-up:hover { transform: scale(1.1); }
 
 /* Equipment */
+#equipment .blurb { max-width: initial; }
+#equipment .blurb p { max-width: 600px; }
 @media (min-width: 640px) {
   #equipment .blurb { margin-left: 6%; }
 }
+@media (min-width: 768px) {
+  dl {
+    column-count: 2;
+    column-gap: 2em;
+    max-width: 800px;
+  }
+  dt, dd {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+}
 @media (min-width: 1024px) {
   #equipment .blurb { margin-left: 12%; }
+  dl { column-gap: 3em; }
 }
 
 /* Resources */
