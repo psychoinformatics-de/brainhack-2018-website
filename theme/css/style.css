@@ -63,14 +63,14 @@ li[class^="icon-"]::before { margin-right: 0.5em; }
 a {
   /* box-shadow has two main advantages 1) can be used with "transition" and
      2) its size doesn't impact the position of other elements. */
-  box-shadow: 0 1px 0px 0 #111;
+  box-shadow: 0 1px 0 0 #111;
   color: #111;
   text-decoration: none;
   transition: box-shadow 0.4s, color 0.4s;
 }
 a:hover {
   color: #333;
-  box-shadow: 0 2px 0px 0 #333;
+  box-shadow: 0 2px 0 0 #333;
 }
 
 body {
@@ -85,12 +85,11 @@ body {
   body { font-size: 16px; }
 }
 
-dl dt { font-weight: bold; }
-dl dd {
-  border-left: 2px solid #ddd;
-  margin-left: 0.25em;
-  padding-left: 0.5em;
+dl dt {
+  font-weight: bold;
+  margin-top: 0.5em;
 }
+dl dd { margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
@@ -115,6 +114,14 @@ h3 {
   h1, h2 {
     font-size: 42px;
   }
+  dl dt {
+    margin-left: calc(0.5em + 2px);
+  }
+  dl dd {
+    border: 0 solid #ddd;
+    border-left-width: 2px;
+    padding-left: 0.5em;
+  }
 }
 
 /*
@@ -126,13 +133,13 @@ main {
   padding: 0 1.5em;
 }
 .card {
-  margin: 1em 0;
+  margin-top: 1em;
 }
 nav.card {
   margin: 0.8em 0;
 }
 header.card {
-  margin: 0;
+  margin-top: 0;
   min-height: 300px;
 }
 header.card h1 { margin: 0 0 0.5em 0; }
@@ -146,7 +153,6 @@ section.card, header.card {
   justify-content: space-around;
 }
 section.card { min-height: 600px; }
-section.card:last-of-type  { margin-bottom: 0.5em; }
 .card .wrapper {
   align-items: center;
   display: flex;
@@ -154,16 +160,15 @@ section.card:last-of-type  { margin-bottom: 0.5em; }
   padding: 1.5em;
   width: 100%
 }
-footer.card { margin-top: 0; }
+footer.card { margin: 0.5em 0; }
 @media (min-width: 768px) {
   main { padding: 0 1.7em; }
-  .card { margin: 1.7em 0; }
-  section.card:last-of-type { margin-bottom: 0.85em; }
+  .card { margin-top: 1.7em; }
+  footer.card { margin: 0.85em 0; }
 }
 
-.projects { margin: 0.85em auto 0 auto; }
 .pitch {
-  margin: 0.85em 0;
+  margin-top: 1em;
   padding: 1.5em;
 }
 @media screen and (min-width: 768px) {
@@ -178,6 +183,7 @@ footer.card { margin-top: 0; }
 }
 @media screen and (min-width: 1024px) {
   .pitch {
+    margin-top: 1.7em;
     padding: 1.5em 3em;
     flex-basis: calc(50% - 6.1em);
   }
@@ -230,9 +236,11 @@ header.card {
   }
   header.card .blurb { text-align: right; }
   .card.right .blurb { text-align: right; }
+  .card.right dl dt {
+    margin: 0 calc(0.5em + 2px) 0 0;
+  }
   .card.right dl dd {
-    border-right: 2px solid #ddd; border-left: none;
-    margin: 0 0.1em 0 0;
+    border-width: 0 2px 0 0;
     padding: 0 0.5em 0 0;
   }
 }
@@ -272,7 +280,7 @@ nav li a {
   transition: box-shadow 0.4s;
 }
 @media screen and (min-width: 768px) {
-  nav li a:hover { box-shadow: 0px 2px 0 #333; }
+  nav li a:hover { box-shadow: 0 2px 0 #333; }
 }
 
 /* Card letter backgrounds */
@@ -319,7 +327,7 @@ header.card, section.card {
   #landing.with-art .img-wrap { width: 55%; }
 }
 #landing a#sign-up {
-  box-shadow: 0px 3px 0 #333, 0px -3px 0px #333;
+  box-shadow: 0 3px 0 #333, 0 -3px 0 #333;
   color: #333;
   display: inline-block;
   font-size: 1.4em;
@@ -331,7 +339,6 @@ header.card, section.card {
 #landing a#sign-up:hover { transform: scale(1.1); }
 
 /* Equipment */
-#equipment { text-align: left; }
 @media (min-width: 640px) {
   #equipment .blurb { margin-left: 6%; }
 }
@@ -340,7 +347,6 @@ header.card, section.card {
 }
 
 /* Resources */
-#resources { text-align: left; }
 @media (min-width: 1024px) {
   #resources .img-wrap img { width: 95%; }
 }
@@ -352,7 +358,10 @@ footer.card p {
   margin: 0;
   padding: 0.5em 1em;
 }
-footer span.break { display: block; }
+footer span.break {
+  display: block;
+  line-height: 0.5em;
+}
 @media screen and (min-width: 850px) {
   footer span.break { display: inline; }
 }
@@ -388,12 +397,11 @@ footer span.break { display: block; }
 /* Default .rst content (including Details page) */
 div.section {
   background: #efefef;
-  margin: 1em 0;
+  margin-top: 1em;
   padding: 0.5em 1.5em;
 }
 @media (min-width: 768px) {
-  div.section { margin: 1.7em 0; }
-  div.section:last-of-type { margin-bottom: 0.85em; }
+  div.section { margin-top: 1.7em; }
 }
 @media (min-width: 1024px) {
   div.section { padding: 0.5em 30% 0.5em 15%; }
@@ -402,16 +410,16 @@ div.section {
 /*
  *  State
  */
-nav li a.active { box-shadow: 0px 2px 0 #333; }
+nav li a.active { box-shadow: 0 2px 0 #333; }
 @media screen and (min-width: 768px) {
   nav li a.active {
     animation: borderFadeIn 0.5s;
-    box-shadow: 0px 2px 0 #333, 0px -2px 0px #333;
+    box-shadow: 0 2px 0 #333, 0 -2px 0 #333;
   }
 }
 @keyframes borderFadeIn {
-  from { box-shadow: 0px 2px 0 rgba(51,51,51,0.0), 0px -2px 0px rgba(51,51,51,0.0); }
-  to   { box-shadow: 0px 2px 0 rgba(51,51,51,1.0), 0px -2px 0px rgba(51,51,51,1.0); }
+  from { box-shadow: 0 2px 0 rgba(51,51,51,0.0), 0 -2px 0 rgba(51,51,51,0.0); }
+  to   { box-shadow: 0 2px 0 rgba(51,51,51,1.0), 0 -2px 0 rgba(51,51,51,1.0); }
 }
 
 /* This is so links to anchors visually maintain the margin at the top of cards.
@@ -419,16 +427,11 @@ nav li a.active { box-shadow: 0px 2px 0 #333; }
  * scroll to when navigating to an anchor. But it seems to be 1px above the
  * target --- and ignores margin and ::before content. I chose to abuse borders
  * because padding wouldn't work (background issues abound).
- *
- * The calc()s below are to avoid a 1px band along the top of the previous card.
  */
 .card:target {
-  margin-top: calc(-0.9em + 1px);
-  border-top: calc(0.9em - 1px) solid #fafafa;
+  margin-top: 1px; /* avoid seeing a 1px band of the previous card */
+  border-top: 0.9em solid #fafafa;
 }
 @media (min-width: 768px) {
-  .card:target {
-    margin-top: calc(-1.7em + 1px);
-    border-top: calc(1.7em - 1px) solid #fafafa;
-  }
+  .card:target { border-top-width: 1.7em; }
 }
