@@ -85,12 +85,11 @@ body {
   body { font-size: 16px; }
 }
 
-dl dt { font-weight: bold; }
-dl dd {
-  border-left: 2px solid #ddd;
-  margin-left: 0.25em;
-  padding-left: 0.5em;
+dl dt {
+  font-weight: bold;
+  margin-top: 0.5em;
 }
+dl dd { margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
@@ -114,6 +113,14 @@ h3 {
 @media (min-width: 640px) { /* TODO: min-height, not width */
   h1, h2 {
     font-size: 42px;
+  }
+  dl dt {
+    margin-left: calc(0.5em + 2px);
+  }
+  dl dd {
+    border: 0 solid #ddd;
+    border-left-width: 2px;
+    padding-left: 0.5em;
   }
 }
 
@@ -230,9 +237,11 @@ header.card {
   }
   header.card .blurb { text-align: right; }
   .card.right .blurb { text-align: right; }
+  .card.right dl dt {
+    margin: 0 calc(0.5em + 2px) 0 0;
+  }
   .card.right dl dd {
-    border-right: 2px solid #ddd; border-left: none;
-    margin: 0 0.1em 0 0;
+    border-width: 0 2px 0 0;
     padding: 0 0.5em 0 0;
   }
 }
@@ -331,7 +340,6 @@ header.card, section.card {
 #landing a#sign-up:hover { transform: scale(1.1); }
 
 /* Equipment */
-#equipment { text-align: left; }
 @media (min-width: 640px) {
   #equipment .blurb { margin-left: 6%; }
 }
@@ -340,7 +348,6 @@ header.card, section.card {
 }
 
 /* Resources */
-#resources { text-align: left; }
 @media (min-width: 1024px) {
   #resources .img-wrap img { width: 95%; }
 }
