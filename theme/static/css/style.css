@@ -343,7 +343,7 @@ nav li a {
   font-weight: bold;
   padding: 0 0.3em;
   text-transform: uppercase;
-  transition: all .2s linear;
+  transition: transform .2s linear;
 }
 #landing a#sign-up:hover { transform: scale(1.1); }
 
