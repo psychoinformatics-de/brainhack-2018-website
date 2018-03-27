@@ -428,6 +428,20 @@ footer span.break {
   .half-card { background-color: #eee; }
 }
 
+#map.half-card {
+  padding: 0;
+  flex-basis: calc(50% - 1px);
+}
+#map.half-card iframe {
+  border: 0;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #map.half-card iframe { min-height: 30em; }
+}
+
 /* Default .rst-generated content */
 div.section {
   background: #efefef;
