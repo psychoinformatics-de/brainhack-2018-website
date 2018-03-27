@@ -119,6 +119,19 @@ Source:
 ----
 
 Files:
+  theme/img/pitch_eyetracking.png
+Copyright:
+  2013, Rosenfeld Media
+License:
+  `Attribution 2.0 Generic (CC BY 2.0)`_
+Source:
+  https://www.flickr.com/photos/rosenfeldmedia/10910600174
+
+.. _Attribution 2.0 Generic (CC BY 2.0): https://creativecommons.org/licenses/by/2.0/
+
+----
+
+Files:
   theme/img/pitch_ph_clover.jpg
 Copyright:
   2016, Jeon Sang O
