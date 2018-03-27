@@ -178,19 +178,19 @@ footer.card { margin: 0.5em 0; }
     justify-content: space-between;
   }
   .pitch {
-    flex-basis: calc(50% - 3.1em);
+    flex-basis: calc(50% - 3em - 1px);
   }
 }
 @media screen and (min-width: 1024px) {
   .pitch {
     margin-top: 1.7em;
     padding: 1.5em 3em;
-    flex-basis: calc(50% - 6.1em);
+    flex-basis: calc(50% - 6em - 1px);
   }
 }
 @media screen and (min-width: 1280px) {
   .pitch {
-    flex-basis: calc(33% - 5.8em);
+    flex-basis: calc(calc(100% / 3) - 6em - 1px);
   }
 }
 
