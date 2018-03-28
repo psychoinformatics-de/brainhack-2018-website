@@ -391,27 +391,27 @@ footer span.break {
 }
 
 /* Project Pitches */
-#projects .card header { text-align: center; }
-#projects .card header img {
+.pitch header { text-align: center; }
+.pitch header img {
   border-radius: 100%;
   height: 80px;
   width: 80px;
 }
-#projects .card header h2 {
+.pitch header h2 {
   font-size: 30px;
   margin: 0;
 }
-#projects .card p:last-of-type { margin-bottom: 0; } /* TODO default for everything? */
+.pitch p:last-of-type { margin-bottom: 0; } /* TODO default for everything? */
 
-#projects .card .info { padding-left: 1.5em; }
-#projects .card .info li[class^="icon-"]::before { margin-left: -1.5em; }
+.pitch .info { padding-left: 1.5em; }
+.pitch .info li[class^="icon-"]::before { margin-left: -1.5em; }
 
-#projects .card span.project, #projects .card span.tutorial { /* TODO broaden */
+span.project, span.tutorial { /* TODO move */
   font-family: 'Raleway', serif;
   font-weight: bold;
 }
-#projects .card .project  { color: #ec470e; }
-#projects .card .tutorial { color: #37ab00; }
+span.project  { color: #ec470e; }
+span.tutorial { color: #37ab00; }
 
 /* Details page */
 .card.half h2 {
