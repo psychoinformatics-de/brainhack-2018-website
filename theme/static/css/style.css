@@ -131,10 +131,14 @@ main {
   margin: 0 auto;
   max-width: 1440px;
   padding: 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .card {
   margin-top: 1em;
   padding: 1.5em;
+  flex-basis: 100%;
 }
 nav.card {
   margin: 0.8em 0;
@@ -176,22 +180,8 @@ footer.card {
   footer.card { margin: 0.85em 0; }
 }
 @media screen and (min-width: 768px) {
-  #details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .card.half {
-    flex-basis: calc(50% - 3em - 1px);
-  }
-  .card.tri {
-    flex-basis: calc(50% - 3em - 1px);
-  }
+  .card.half { flex-basis: calc(50% - 3em - 1px); }
+  .card.tri  { flex-basis: calc(50% - 3em - 1px); }
 }
 @media screen and (min-width: 1024px) {
   .card.half {
@@ -206,9 +196,7 @@ footer.card {
   }
 }
 @media screen and (min-width: 1280px) {
-  .card.tri {
-    flex-basis: calc(calc(100% / 3) - 6em - 1px);
-  }
+  .card.tri { flex-basis: calc(calc(100% / 3) - 6em - 1px); }
 }
 
 /*
