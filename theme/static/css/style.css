@@ -134,9 +134,11 @@ main {
 }
 .card {
   margin-top: 1em;
+  padding: 1.5em;
 }
 nav.card {
   margin: 0.8em 0;
+  padding: 0;
 }
 header.card {
   margin-top: 0;
@@ -164,20 +166,14 @@ header.card h1 { margin: 0 0 0.5em 0; }
   padding: 1.5em;
   width: 100%
 }
-footer.card { margin: 0.5em 0; }
+footer.card {
+  margin: 0.5em 0;
+  padding: 0;
+}
 @media (min-width: 768px) {
   main { padding: 0 1.7em; }
   .card { margin-top: 1.7em; }
   footer.card { margin: 0.85em 0; }
-}
-
-.card.half {
-  margin-top: 1em;
-  padding: 1.5em;
-}
-.card.tri {
-  margin-top: 1em;
-  padding: 1.5em;
 }
 @media screen and (min-width: 768px) {
   #details {
