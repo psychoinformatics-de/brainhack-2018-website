@@ -242,6 +242,11 @@ dd .extra { display: none; }
 header.card { background-color: #ff9e0d; }
 header.card svg { fill: #f99508; }
 
+.card.half:nth-of-type(odd), .card.tri:nth-of-type(odd) { background-color: #eee; }
+@media screen and (min-width: 768px) {
+  .card.half, .card.tri { background-color: #eee; }
+}
+
 .card.image-only { background-position: center; }
 .card.image-only svg {
   fill: #bbb;
@@ -386,10 +391,6 @@ footer span.break {
 }
 
 /* Project Pitches */
-.card.tri:nth-of-type(odd) { background-color: #eee; }
-@media screen and (min-width: 768px) {
-  .card.tri { background-color: #eee; }
-}
 #projects .card header { text-align: center; }
 #projects .card header img {
   border-radius: 100%;
@@ -413,14 +414,10 @@ footer span.break {
 #projects .card .tutorial { color: #37ab00; }
 
 /* Details page */
-.card.half:nth-of-type(odd) { background-color: #eee; }
 .card.half h2 {
   margin-top: 0.25em;
 }
 .card.half p:last-of-type { margin-bottom: 0; }
-@media screen and (min-width: 768px) {
-  .card.half { background-color: #eee; }
-}
 
 #map.card.half {
   padding: 0;
