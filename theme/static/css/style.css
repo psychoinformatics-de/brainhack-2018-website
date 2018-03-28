@@ -141,12 +141,16 @@ nav.card {
 header.card {
   margin-top: 0;
   min-height: 300px;
+  align-items: center;
+  display: flex;
+  padding: 1.5em;
+}
+header.card .blurb {
+  position: relative;
 }
 header.card h1 { margin: 0 0 0.5em 0; }
 @media (min-width: 640px) {
-  header.card .blurb {
-    margin: 0 15% 0 auto;
-  }
+  header.card .blurb { margin: 0 15% 0 auto; }
 }
 .card.crazy {
   display: flex;
