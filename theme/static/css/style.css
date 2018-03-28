@@ -322,7 +322,7 @@ nav li a {
 /* Landing */
 #landing { min-height: 600px; }
 #landing h1 { margin-bottom: 0; }
-#landing .date { margin-top: 0; }
+#landing .date { margin-top: 0.1em; }
 @media (min-width: 1024px) {
   #landing.with-art .blurb {
     margin: 0;
