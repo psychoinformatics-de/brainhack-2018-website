@@ -148,12 +148,12 @@ header.card h1 { margin: 0 0 0.5em 0; }
     margin: 0 15% 0 auto;
   }
 }
-section.card, header.card {
+.card.crazy {
   display: flex;
   justify-content: space-around;
 }
-section.card { min-height: 600px; }
-.card .wrapper {
+.card.crazy { min-height: 600px; }
+.card.crazy .wrapper {
   align-items: center;
   display: flex;
   max-width: 1180px;
@@ -171,7 +171,16 @@ footer.card { margin: 0.5em 0; }
   margin-top: 1em;
   padding: 1.5em;
 }
+.card.tri {
+  margin-top: 1em;
+  padding: 1.5em;
+}
 @media screen and (min-width: 768px) {
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .details {
     display: flex;
     flex-wrap: wrap;
@@ -180,6 +189,9 @@ footer.card { margin: 0.5em 0; }
   .card.half {
     flex-basis: calc(50% - 3em - 1px);
   }
+  .card.tri {
+    flex-basis: calc(50% - 3em - 1px);
+  }
 }
 @media screen and (min-width: 1024px) {
   .card.half {
@@ -187,31 +199,14 @@ footer.card { margin: 0.5em 0; }
     padding: 1.5em 3em;
     flex-basis: calc(50% - 6em - 1px);
   }
-}
-
-.pitch {
-  margin-top: 1em;
-  padding: 1.5em;
-}
-@media screen and (min-width: 768px) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .pitch {
-    flex-basis: calc(50% - 3em - 1px);
-  }
-}
-@media screen and (min-width: 1024px) {
-  .pitch {
+  .card.tri {
     margin-top: 1.7em;
     padding: 1.5em 3em;
     flex-basis: calc(50% - 6em - 1px);
   }
 }
 @media screen and (min-width: 1280px) {
-  .pitch {
+  .card.tri {
     flex-basis: calc(calc(100% / 3) - 6em - 1px);
   }
 }
@@ -391,32 +386,31 @@ footer span.break {
 }
 
 /* Project Pitches */
-.pitch:nth-of-type(odd) { background-color: #eee; }
-.pitch header { text-align: center; }
-.pitch header img {
+.card.tri:nth-of-type(odd) { background-color: #eee; }
+@media screen and (min-width: 768px) {
+  .card.tri { background-color: #eee; }
+}
+#projects .card header { text-align: center; }
+#projects .card header img {
   border-radius: 100%;
   height: 80px;
   width: 80px;
 }
-.pitch header h2 {
+#projects .card header h2 {
   font-size: 30px;
   margin: 0;
 }
-.pitch p:last-of-type { margin-bottom: 0; }
+#projects .card p:last-of-type { margin-bottom: 0; } /* TODO default for everything? */
 
-.pitch .info { padding-left: 1.5em; }
-.pitch .info li[class^="icon-"]::before { margin-left: -1.5em; }
+#projects .card .info { padding-left: 1.5em; }
+#projects .card .info li[class^="icon-"]::before { margin-left: -1.5em; }
 
-.pitch span.project, .pitch span.tutorial {
+#projects .card span.project, #projects .card span.tutorial { /* TODO broaden */
   font-family: 'Raleway', serif;
   font-weight: bold;
 }
-.pitch .project  { color: #ec470e; }
-.pitch .tutorial { color: #37ab00; }
-
-@media screen and (min-width: 768px) {
-  .pitch { background-color: #eee; }
-}
+#projects .card .project  { color: #ec470e; }
+#projects .card .tutorial { color: #37ab00; }
 
 /* Details page */
 .card.half:nth-of-type(odd) { background-color: #eee; }
