@@ -176,12 +176,12 @@ footer.card { margin: 0.5em 0; }
   padding: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  #projects {
+  #details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .details {
+  #projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
