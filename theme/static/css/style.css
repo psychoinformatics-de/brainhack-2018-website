@@ -149,14 +149,14 @@ main {
   flex-basis: 100%;
 }
 @media screen and (min-width: 768px) {
-  .card {
-    margin-top: 1.7em;
-    padding: 1.5em 3em;
-  }
   .card.half, .card.tri { flex-basis: calc(50% - 3em - 1px); }
   .card.half.bare, .card.tri.bare { flex-basis: calc(50% - 1px); }
 }
 @media screen and (min-width: 1024px) {
+  .card {
+    margin-top: 1.7em;
+    padding: 1.5em 3em;
+  }
   .card.half, .card.tri { flex-basis: calc(50% - 6em - 1px); }
 }
 @media screen and (min-width: 1280px) {
