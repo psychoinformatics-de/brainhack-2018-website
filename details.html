@@ -33,19 +33,15 @@
 
   
   <header id="details-landing" class="card">
-  <svg viewbox="0 0 276.17 79.375">
-    <path d="M31.72 57.172L46.708 0h16.895L39.568 79.354H23.981L0 0h16.895z" /><path d="M107.982 44.582H75.39v22.4h38.097v12.372H60.02V0h53.302v12.48H75.39v20.003h32.592zm59.303 34.772h-15.26l-22.073-51.177v51.177h-15.424V0h15.424l21.91 50.959L151.915 0h15.37zM221.529 0l.054 52.594q0 6.649-1.853 11.827-1.798 5.177-5.286 8.774-3.434 3.543-8.448 5.396-4.96 1.853-11.336 1.853-5.995 0-10.846-1.853-4.796-1.853-8.23-5.396-3.433-3.542-5.34-8.72-1.854-5.232-1.854-11.881L168.445 0h15.314l.055 52.594q.054 7.685 2.78 11.609 2.779 3.924 8.066 3.924 5.613 0 8.556-3.924 2.998-3.924 3.052-11.61L206.323 0zm49.136 44.582h-32.592v22.4h38.097v12.372h-53.466V0h53.302v12.48h-37.933v20.003h32.592z" />
-  </svg>
-  <div class="wrapper">
-    <div class="blurb">
+<svg viewbox="0 0 276.17 79.375">
+  <path d="M31.72 57.172L46.708 0h16.895L39.568 79.354H23.981L0 0h16.895z" /><path d="M107.982 44.582H75.39v22.4h38.097v12.372H60.02V0h53.302v12.48H75.39v20.003h32.592zm59.303 34.772h-15.26l-22.073-51.177v51.177h-15.424V0h15.424l21.91 50.959L151.915 0h15.37zM221.529 0l.054 52.594q0 6.649-1.853 11.827-1.798 5.177-5.286 8.774-3.434 3.543-8.448 5.396-4.96 1.853-11.336 1.853-5.995 0-10.846-1.853-4.796-1.853-8.23-5.396-3.433-3.542-5.34-8.72-1.854-5.232-1.854-11.881L168.445 0h15.314l.055 52.594q.054 7.685 2.78 11.609 2.779 3.924 8.066 3.924 5.613 0 8.556-3.924 2.998-3.924 3.052-11.61L206.323 0zm49.136 44.582h-32.592v22.4h38.097v12.372h-53.466V0h53.302v12.48h-37.933v20.003h32.592z" />
+</svg>    <div class="blurb">
       <h1>Event <span class="bold">Details</span></h1>
       <p>Also known as: "everything that is important."</p>
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="details">
-  <div class="half-card">
+  <section class="card half">
     <h2>Venue</h2>
     <p>Contact us at
       <a href="mailto:brainhack@psychoinformatics.de">brainhack@psychoinformatics.de</a>
@@ -73,9 +69,9 @@
     <p>Most importantly, there are at least two dedicated coffee bars nearby
        that will help you find the exact type of caffeine source that
        <em>you</em> need to crank out all that scientific output goodness.</p>
-  </div>
+  </section>
 
-  <div class="half-card">
+  <section class="card half">
     <h2>Schedule</h2>
     <p>The event will start Thursday afternoon with introductions and a
        get-together. All day Friday and Saturday are dedicated to hacking on
@@ -94,17 +90,17 @@
        <a href="https://play.google.com/store/apps/details?id=net.gaast.giggity">Google Play</a>,
        and scan this QR code from inside the app:</p>
     <img src="theme/img/calendar_qrcode.png" />
-  </div>
+  </section>
 
-  <div id="map" class="half-card">
-    <iframe src="http://www.openstreetmap.org/export/embed.html?bbox=11.639392375946045%2C52.13756435052512%2C11.653511524200438%2C52.14378016935833&amp;layer=mapnik&amp;marker=52.14067236837772%2C11.646451950073242"></iframe>
+  <section class="card half bare">
+    <iframe class="map" src="http://www.openstreetmap.org/export/embed.html?bbox=11.639392375946045%2C52.13756435052512%2C11.653511524200438%2C52.14378016935833&amp;layer=mapnik&amp;marker=52.14067236837772%2C11.646451950073242"></iframe>
     <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
       <meta itemprop="latitude" content="52.14378016935833" />
       <meta itemprop="longitude" content="11.646451950073242" />
     </div>
-  </div>
+  </section>
 
-  <div class="half-card">
+  <section class="card half">
     <h2>Accommodation</h2>
     <p>Attendees will organize their accommodations individually. Magdeburg
        offers a range of places to stay. Here are two affordable options:</p>
@@ -117,9 +113,7 @@
     <p>If you are a sucker for an opulent breakfast, take a look at the
       <a href="https://www.maritim.de/de/hotels/deutschland/hotel-magdeburg/unser-hotel">Maritim</a>,
       but you gotta pay the price.</p>
-  </div>
 
-  <div class="half-card">
     <h2>Transportation</h2>
     <p>While Magdeburg has an airport, most people will want to fly to
        <a href="https://www.leipzig-halle-airport.de/">Leipzig (LEJ)</a> or
@@ -135,34 +129,37 @@
     <p>The main venue and all accommodation options mentioned above are in
        walking distance. If you want to get around the city, there are trams and
        buses.</p>
-  </div>
+  </section>
 
-  <div class="half-card">
+  <section class="card">
     <h2>Organizers</h2>
     <p>This event is organized by a collection of self-selected people who are excited
     to make BrainHack Magdeburg a reality. In alphabetical order:</p>
-    <ul>
-      <li><strong>Christian Olaf Häusler</strong>, Psychoinformatics Lab, Otto-von-Guericke University</li>
-      <li><strong>Michael Hanke</strong>, Psychoinformatics Lab, Otto-von-Guericke University
-      and Center for Behavioral Brain Sciences</li>
-      <li><strong>Frederik Kramer</strong>, initOS GmbH</li>
-      <li><strong>Falk Lüsebrink</strong>, Department of Biomedical Magnetic Resonance,
-      Otto-von-Guericke University</li>
-      <li><strong>Claudia Preuschhof</strong>, Clinical Developmental Psychology, Otto-von-Guericke
-      University and Center for Behavioral Brain Sciences</li>
-      <li><strong>Jörg Stadler</strong>, Combinatorial NeuroImaging Core Facility (CNI) and Special
-      Lab Non-Invasive Brain Imaging, Leibniz Institute for Neurobiology (LIN)</li>
-      <li><strong>Johannes Steffen</strong>, Image Processing &amp; Understanding Group, Faculty of Computer
-      Science, Department of Simulation and Graphics, Otto-von-Guericke University</li>
-      <li><strong>José P. Valdés-Herrera</strong>, Aging &amp; Cognition Research Group, German Center for
-      Neurodegenerative Diseases (DZNE)</li>
-      <li><strong>Adina Wagner</strong>, Psychoinformatics Lab, Otto-von-Guericke University</li>
-      <li><strong>Alex Waite</strong>, Psychoinformatics Lab, Otto-von-Guericke University</li>
-      <li><strong>Jiahua Xu</strong>, Data &amp; Knowledge Engineering Group, Faculty of Computer Science and
-      Institute of Medical Psychology, Otto-von-Guericke University</li>
-    </ul>
-  </div>
-</div>
+    <dl class="two-col">
+      <dt>Christian Olaf Häusler</dt>
+        <dd>Psychoinformatics Lab, Otto-von-Guericke University</dd>
+      <dt>Michael Hanke</dt>
+        <dd>Psychoinformatics Lab, Otto-von-Guericke University and Center for Behavioral Brain Sciences</dd>
+      <dt>Frederik Kramer</dt>
+        <dd>initOS GmbH</dd>
+      <dt>Falk Lüsebrink</dt>
+        <dd>Department of Biomedical Magnetic Resonance, Otto-von-Guericke University</dd>
+      <dt>Claudia Preuschhof</dt>
+        <dd>Clinical Developmental Psychology, Otto-von-Guericke University and Center for Behavioral Brain Sciences</dd>
+      <dt>Jörg Stadler</dt>
+        <dd>Combinatorial NeuroImaging Core Facility (CNI) and Special Lab Non-Invasive Brain Imaging, Leibniz Institute for Neurobiology (LIN)</dd>
+      <dt>Johannes Steffen</dt>
+        <dd>Image Processing &amp; Understanding Group, Faculty of Computer Science, Department of Simulation and Graphics, Otto-von-Guericke University</dd>
+      <dt>José P. Valdés-Herrera</dt>
+        <dd>Aging &amp; Cognition Research Group, German Center for Neurodegenerative Diseases (DZNE)</dd>
+      <dt>Adina Wagner</dt>
+        <dd>Psychoinformatics Lab, Otto-von-Guericke University</dd>
+      <dt>Alex Waite</dt>
+        <dd>Psychoinformatics Lab, Otto-von-Guericke University</dd>
+      <dt>Jiahua Xu</dt>
+        <dd>Data &amp; Knowledge Engineering Group, Faculty of Computer Science and Institute of Medical Psychology, Otto-von-Guericke University</dd>
+    </dl>
+  </section>
 
 
 
