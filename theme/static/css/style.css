@@ -90,6 +90,10 @@ dl dt {
   padding-top: 0.5em;
 }
 dl dd { margin: 0; }
+dl ul {
+  padding: 0;
+  margin: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
@@ -213,10 +217,7 @@ dd .extra { display: none; }
   position: relative;
 }
 .card { text-align: center; }
-.card dl ul { /* TODO: broader? */
-  padding: 0;
-  margin: 0;
-}
+.card p:last-of-type { margin-bottom: 0; }
 .card svg { /* TODO: turn into class applied on <svg> */
   position: absolute;
   height: 100%;
@@ -235,12 +236,8 @@ dd .extra { display: none; }
   .card.half, .card.tri { background-color: #eee; }
 }
 
-.card.bare {
-  padding: 0;
-}
-.card.bare.photo {
-  background-position: center;
-}
+.card.bare { padding: 0; }
+.card.bare.photo { background-position: center; }
 .card.bare.photo svg {
   fill: #bbb;
   opacity: 0.2;
@@ -309,10 +306,6 @@ footer span.break {
   width: 100%;
 }
 @media (min-width: 640px) {
-  .card {
-    text-align: left; /* TODO: make a rule on body? */
-  }
-  .card p { margin: 1em 0.28em; }
   .artsy .blurb {
     max-width: 600px;
     width: 75%;
@@ -333,7 +326,7 @@ footer span.break {
 
 /* .right */
 @media (min-width: 640px) {
-  .right .blurb { text-align: right; } /* TODO: drop .blurb */
+  .right { text-align: right; }
   .right dl dt {
     padding-right: calc(0.5em + 2px); padding-left: 0;
   }
@@ -363,8 +356,16 @@ footer span.break {
   .two-col { column-gap: 3em; }
 }
 
-/* card three */
-#three { background-image: url('/theme/img/collab.jpg'); }
+/* maps */
+.map {
+  border: 0;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .map { min-height: 30em; }
+}
 
 /* landing card */
 #landing { min-height: 600px; }
@@ -388,6 +389,9 @@ footer span.break {
   transition: transform .2s linear;
 }
 #landing a#sign-up:hover { transform: scale(1.1); }
+
+/* card three */
+#three { background-image: url('/theme/img/collab.jpg'); }
 
 /* equipment card */
 #equipment .blurb { max-width: initial; }
@@ -415,7 +419,6 @@ footer span.break {
   font-size: 30px;
   margin: 0;
 }
-.pitch p:last-of-type { margin-bottom: 0; } /* TODO default for everything? */
 
 .pitch .info { padding-left: 1.5em; }
 .pitch .info li[class^="icon-"]::before { margin-left: -1.5em; }
@@ -426,22 +429,6 @@ span.project, span.tutorial { /* TODO move */
 }
 span.project  { color: #ec470e; }
 span.tutorial { color: #37ab00; }
-
-/* details page */
-.card.half h2 {
-  margin-top: 0.25em;
-}
-.card.half p:last-of-type { margin-bottom: 0; }
-
-.map {
-  border: 0;
-  height: 100%;
-  min-height: 60vh;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .map { min-height: 30em; }
-}
 
 /* default .rst-generated content */
 div.section {
