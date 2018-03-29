@@ -216,19 +216,13 @@ dd .extra { display: none; }
   overflow: hidden;
   position: relative;
 }
-.card { text-align: center; }
+.card p { margin: 1em 0.28em; }
 .card p:last-of-type { margin-bottom: 0; }
 .card svg { /* TODO: turn into class applied on <svg> */
   position: absolute;
   height: 100%;
   fill: #e9e9e9;
   left: 25px;
-}
-@media (min-width: 640px) {
-  .card {
-    text-align: left; /* TODO: make a rule on body? */
-  }
-  .card p { margin: 1em 0.28em; }
 }
 
 .card.half:nth-of-type(odd), .card.tri:nth-of-type(odd) { background-color: #eee; }
@@ -274,7 +268,10 @@ nav li a {
 header.card { background-color: #ff9e0d; }
 header.card h1 { margin: 0 0 0.5em 0; }
 header.card svg { fill: #f99508; }
-header.card .blurb { position: relative; }
+header.card .blurb {
+  position: relative;
+  text-align: center;
+}
 @media (min-width: 640px) {
   header.card .blurb { text-align: right; }
 }
@@ -295,8 +292,8 @@ footer span.break {
 }
 
 /* artsy (only on index page for now) */
+.artsy { text-align: center; }
 .artsy .wrapper { position: relative; }
-
 .artsy.with-art .img-wrap {
   display: none;
   line-height: 0;
@@ -306,6 +303,7 @@ footer span.break {
   width: 100%;
 }
 @media (min-width: 640px) {
+  .artsy { text-align: left; }
   .artsy .blurb {
     max-width: 600px;
     width: 75%;
