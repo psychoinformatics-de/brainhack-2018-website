@@ -216,7 +216,10 @@ dd .extra { display: none; }
   overflow: hidden;
   position: relative;
 }
-.card p { margin: 1em 0.28em; }
+.card p, .card ul, .card ol, .card dl { /* to align w/ Raleway's peculiarities */
+  margin-left:  0.28em;
+  margin-right: 0.28em;
+}
 .card p:last-of-type { margin-bottom: 0; }
 .card svg { /* TODO: turn into class applied on <svg> */
   position: absolute;
