@@ -220,7 +220,7 @@ dd .extra { display: none; }
   margin-left:  0.28em;
   margin-right: 0.28em;
 }
-.card p:last-of-type { margin-bottom: 0; }
+.card p:last-child { margin-bottom: 0; }
 .card svg { /* TODO: turn into class applied on <svg> */
   position: absolute;
   height: 100%;
