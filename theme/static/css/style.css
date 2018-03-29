@@ -347,6 +347,22 @@ footer span.break {
   .artsy.with-art.right .wrapper { justify-content: space-between; }
 }
 
+/* two-col list */
+@media (min-width: 768px) {
+  .two-col {
+    column-count: 2;
+    column-gap: 2em;
+  }
+  .two-col dt, .two-col dd, .two-col li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+}
+@media (min-width: 1024px) {
+  .two-col { column-gap: 3em; }
+}
+
 /* card three */
 #three { background-image: url('/theme/img/collab.jpg'); }
 
@@ -379,21 +395,8 @@ footer span.break {
 @media (min-width: 640px) {
   #equipment .blurb { margin-left: 6%; }
 }
-@media (min-width: 768px) {
-  #equipment dl {
-    column-count: 2;
-    column-gap: 2em;
-    max-width: 800px;
-  }
-  #equipment dt, #equipment dd {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-  }
-}
 @media (min-width: 1024px) {
   #equipment .blurb { margin-left: 12%; }
-  #equipment dl { column-gap: 3em; }
 }
 
 /* resources card */
