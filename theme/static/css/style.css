@@ -294,13 +294,10 @@ footer span.break {
 /* artsy (only on index page for now) */
 .artsy { text-align: center; }
 .artsy .wrapper { position: relative; }
-.artsy.with-art .img-wrap {
+.artsy.with-art img {
   display: none;
   line-height: 0;
-}
-.artsy.with-art .img-wrap img {
   opacity: .95;
-  width: 100%;
 }
 @media (min-width: 640px) {
   .artsy { text-align: left; }
@@ -310,15 +307,12 @@ footer span.break {
   }
 }
 @media (min-width: 1024px) {
-  .artsy.with-art.right .wrapper {
-    justify-content: space-between;
-  }
   .artsy.with-art .blurb {
     width: 55%;
   }
-  .artsy.with-art .img-wrap {
+  .artsy.with-art img {
     display: unset;
-    width: 45%;
+    width: calc(45% - 2em);
   }
 }
 
@@ -374,7 +368,7 @@ footer span.break {
     margin: 0;
     width: 45%;
   }
-  #landing.with-art .img-wrap { width: 55%; }
+  #landing.with-art img { width: calc(55% - 3em); }
 }
 #landing a#sign-up {
   box-shadow: 0 3px 0 #333, 0 -3px 0 #333;
@@ -399,11 +393,6 @@ footer span.break {
 }
 @media (min-width: 1024px) {
   #equipment .blurb { margin-left: 12%; }
-}
-
-/* resources card */
-@media (min-width: 1024px) {
-  #resources .img-wrap img { width: 95%; }
 }
 
 /* project pitches */
