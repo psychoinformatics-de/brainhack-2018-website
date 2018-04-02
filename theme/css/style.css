@@ -270,7 +270,10 @@ nav li a {
 /* header */
 header.card { background-color: #ff9e0d; }
 header.card h1 { margin: 0 0 0.5em 0; }
-header.card svg { fill: #f99508; }
+header.card svg {
+  fill: #f99508;
+  stroke: #ff9e0d;
+}
 header.card .blurb {
   position: relative;
   text-align: center;
@@ -341,7 +344,10 @@ footer span.break {
     column-count: 2;
     column-gap: 2em;
   }
-  .two-col dt, .two-col dd, .two-col li {
+  .two-col dt, .two-col dd, .two-col li, .two-col div {
+    /* the <div> is used to wrap dt and dd's together, because as of 2018.04,
+     * /nobody/ supports "break-after: avoid" --- all while claiming
+     * "full support".  Sigh... */
     break-inside: avoid;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
