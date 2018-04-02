@@ -1,18 +1,16 @@
 This site was built through the shared efforts of many people. Happy people.
 People with hopes, dreams, beer, and tasty veggie burgers.
 
-In the spirit of humans.txt, we want to give you a glimpse of the people are who
-helped make this website a reality.
+The primary creators were:
 
-Alex Waite with his slate-blue eyes;
-Ben Poldrack with his calm brown eyes that are ever quick with laughter;
-Laura Waite with her shamrock-green eyes, mischievous with play -- eager to roll and tumble;
-and Adina Wagner with her vibrant, blue eyes -- the envy of any summer sky.
+* Alex Waite
+* Adina Wagner
+* Laura Waite
+* Ben Poldrack
+* Michael Hanke
 
-The content came from a wide range of people --- who also have eyes (mysterious
-though their descriptions may be). They (the people that is, not their eyes)
-were crucial to providing the site with quality content in such a short time
-span.
+The content came from a wide range of people, who were crucial to providing the
+site with quality content in such a short time span.
 
 Huge props to both Laura and Adina for the hours spent making the Hovering Brain
 Hero a reality --- and for not hating me when our awesome Stevie Wonder
