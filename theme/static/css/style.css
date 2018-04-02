@@ -270,7 +270,10 @@ nav li a {
 /* header */
 header.card { background-color: #ff9e0d; }
 header.card h1 { margin: 0 0 0.5em 0; }
-header.card svg { fill: #f99508; }
+header.card svg {
+  fill: #f99508;
+  stroke: #ff9e0d;
+}
 header.card .blurb {
   position: relative;
   text-align: center;
