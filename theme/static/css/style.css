@@ -186,13 +186,13 @@ footer.card {
   footer.card { margin: 0.85em 0; }
 }
 
-.artsy {
+.artsy.card {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  min-height: 600px;
+  min-height: calc(600px - 3em);
 }
-.artsy .wrapper {
+.artsy.card .wrapper {
   align-items: center;
   display: flex;
   max-width: 1180px;
@@ -369,7 +369,6 @@ footer span.break {
 }
 
 /* landing card */
-#landing { min-height: 600px; }
 #landing h1 { margin-bottom: 0; }
 #landing .date { margin-top: 0.1em; }
 @media (min-width: 1024px) {
