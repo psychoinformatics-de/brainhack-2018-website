@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0;
 }
 h1 {
-  font-size: 36px;
+  font-size: 42px;
   line-height: 1.05;
 }
 h2 {
@@ -115,9 +115,8 @@ h3 {
   line-height: 1.38;
 }
 @media (min-width: 640px) {
-  h1, h2 {
-    font-size: 42px;
-  }
+  h1 { font-size: 60px; }
+  h2 { font-size: 42px; }
   dl dt {
     padding-left: calc(0.5em + 2px);
   }
@@ -269,7 +268,7 @@ nav li a {
 
 /* header */
 header.card { background-color: #ff9e0d; }
-header.card h1 { margin: 0 0 0.5em 0; }
+header.card h1 { margin: 0; }
 header.card svg {
   fill: #f99508;
   stroke: #ff9e0d;
@@ -369,7 +368,7 @@ footer span.break {
 }
 
 /* landing card */
-#landing h1 { margin-bottom: 0; }
+#landing h1 { font-size: 42px; }
 #landing .date { margin-top: 0.1em; }
 @media (min-width: 1024px) {
   #landing.with-art .blurb {
