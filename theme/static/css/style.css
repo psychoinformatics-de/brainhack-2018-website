@@ -388,7 +388,10 @@ footer span.break {
   text-transform: uppercase;
   transition: transform .2s linear;
 }
+/*
+Sign-up is closed, so remove the interactive feedback
 #landing a#sign-up:hover { transform: scale(1.1); }
+*/
 
 /* card three */
 #three { background-image: url('/theme/img/collab.jpg'); }
