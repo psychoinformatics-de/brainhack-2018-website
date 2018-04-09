@@ -245,7 +245,7 @@ nav.card {
   overflow: unset;
   text-align: right;
 }
-nav ul {
+nav.card ul {
   list-style: none;
   margin: 0;
   padding: 0;
