@@ -392,6 +392,23 @@ Sign-up is closed, so remove the interactive feedback
 #landing a#sign-up:hover { transform: scale(1.1); }
 */
 
+/* sponsors card */
+#sponsors { min-height: unset; }
+#sponsors .wrapper { flex-wrap: wrap; }
+#sponsors a {
+  box-shadow: none;
+  max-width: calc(calc(100% / 2) - 1em);
+}
+#sponsors img {
+  max-height: 80px;
+  max-width: 100%;
+}
+#sponsors a:nth-child(n+2) { margin-top: 1em; }
+@media (min-width: 1024px) {
+  #sponsors a { max-width: calc(calc(100% / 4) - 0.5em); }
+  #sponsors a:nth-child(n+2) { margin-top: 0; }
+}
+
 /* card three */
 #three { background-image: url('/theme/img/collab.jpg'); }
 
