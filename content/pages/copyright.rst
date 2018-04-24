@@ -97,6 +97,15 @@ Source:
 ----
 
 Files:
+  theme/img/logo\*
+Copyright:
+  Belongs to their respective owners
+License:
+  All Rights Reserved
+
+----
+
+Files:
   theme/img/pitch_3d.png
 Copyright:
   2017, OpenClipart-Vectors
