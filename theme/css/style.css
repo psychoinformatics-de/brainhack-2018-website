@@ -367,6 +367,14 @@ footer span.break {
   .map { min-height: 30em; }
 }
 
+/* project vs tutorial visual callouts */
+span.project, span.tutorial {
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+}
+span.project  { color: #ec470e; }
+span.tutorial { color: #37ab00; }
+
 /* sponsors lists */
 .card .sponsors {
   align-items: center;
@@ -377,16 +385,19 @@ footer span.break {
 }
 .card .sponsors a {
   box-shadow: none;
-  margin-top: 1.5em;
-  max-width: calc(calc(100% / 2) - 1em);
+  margin-top: 1em;
+  flex-basis: calc(calc(100% / 2) - 1em);
 }
 .card .sponsors img {
   max-height: 80px;
   max-width: 100%;
 }
 @media (min-width: 1024px) {
-  .card .sponsors a { max-width: calc(calc(100% / 4) - 0.5em); }
-  .card.half .sponsors a { max-width: calc(calc(100% / 2) - 1em); }
+  .card .sponsors a {
+    flex-basis: calc(calc(100% / 4) - 1em);
+    margin-top: 1.5em;
+  }
+  .card.half .sponsors a { flex-basis: calc(calc(100% / 2) - 1em); }
 }
 
 /* landing card */
@@ -415,8 +426,22 @@ Sign-up is closed, so remove the interactive feedback
 */
 
 /* sponsors card */
-#sponsors { min-height: unset; }
-#sponsors .sponsors { margin-top: -1.5em; }
+#sponsors {
+  min-height: unset;
+  text-align: left;
+}
+#sponsors .sponsors { margin-top: -1em; }
+@media (min-width: 640px) {
+  /* this is a bit ugly, but spacing all logos evenly rather than stacked in
+   * columns looks /much/ better with so many varying aspect ratios */
+  #sponsors .sponsors a {
+    flex-basis: unset;
+    max-width: calc(calc(100% / 4) - 1em);
+  }
+}
+@media (min-width: 1024px) {
+  #sponsors .sponsors { margin-top: -1.5em; }
+}
 
 /* card three */
 #three { background-image: url('/theme/img/collab.jpg'); }
@@ -444,13 +469,6 @@ Sign-up is closed, so remove the interactive feedback
 }
 .pitch .info { padding-left: 1.5em; }
 .pitch .info li[class^="icon-"]::before { margin-left: -1.5em; }
-
-span.project, span.tutorial { /* TODO move */
-  font-family: 'Raleway', serif;
-  font-weight: bold;
-}
-span.project  { color: #ec470e; }
-span.tutorial { color: #37ab00; }
 
 /* default .rst-generated content */
 div.section {
