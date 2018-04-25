@@ -367,6 +367,14 @@ footer span.break {
   .map { min-height: 30em; }
 }
 
+/* project vs tutorial visual callouts */
+span.project, span.tutorial {
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+}
+span.project  { color: #ec470e; }
+span.tutorial { color: #37ab00; }
+
 /* sponsors lists */
 .card .sponsors {
   align-items: center;
@@ -461,13 +469,6 @@ Sign-up is closed, so remove the interactive feedback
 }
 .pitch .info { padding-left: 1.5em; }
 .pitch .info li[class^="icon-"]::before { margin-left: -1.5em; }
-
-span.project, span.tutorial { /* TODO move */
-  font-family: 'Raleway', serif;
-  font-weight: bold;
-}
-span.project  { color: #ec470e; }
-span.tutorial { color: #37ab00; }
 
 /* default .rst-generated content */
 div.section {
