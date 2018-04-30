@@ -385,7 +385,7 @@ span.tutorial { color: #37ab00; }
 }
 .card .sponsors a {
   box-shadow: none;
-  margin-top: 1em;
+  margin: 0.5em;
   flex-basis: calc(calc(100% / 2) - 1em);
 }
 .card .sponsors img {
@@ -395,7 +395,6 @@ span.tutorial { color: #37ab00; }
 @media (min-width: 1024px) {
   .card .sponsors a {
     flex-basis: calc(calc(100% / 4) - 1em);
-    margin-top: 1.5em;
   }
   .card.half .sponsors a { flex-basis: calc(calc(100% / 2) - 1em); }
 }
@@ -430,7 +429,6 @@ Sign-up is closed, so remove the interactive feedback
   min-height: unset;
   text-align: left;
 }
-#sponsors .sponsors { margin-top: -1em; }
 @media (min-width: 640px) {
   /* this is a bit ugly, but spacing all logos evenly rather than stacked in
    * columns looks /much/ better with so many varying aspect ratios */
@@ -438,9 +436,6 @@ Sign-up is closed, so remove the interactive feedback
     flex-basis: unset;
     max-width: calc(calc(100% / 4) - 1em);
   }
-}
-@media (min-width: 1024px) {
-  #sponsors .sponsors { margin-top: -1.5em; }
 }
 
 /* card three */
